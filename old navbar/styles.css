@@ -1,0 +1,68 @@
+body {
+  color: white;
+  background:
+    linear-gradient(rgba(69, 69, 69, 0.45),
+      rgba(69, 69, 69, 0.45)),
+    url(img/background.jpeg);
+  background-size: cover;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+img {
+  height: 48px;
+  width: 50px;
+  float: left;
+}
+
+.nav a {
+  color: white;
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: red;
+  color: white;
+}
+
+.nav a.active {
+  background-color: red;
+  color: white;
+}
+
+.nav input {
+  float: right;
+  margin-top: 12.5px;
+  margin-right: 12.5px;
+}
+
+.search {
+  width: 5px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -webkit-backface-visibility: hidden;
+  -webkit-border-radius: 0px;
+}
+
+.search:focus {
+  width: 150px;
+}
+
+.invis {
+  visibility: hidden;
+  padding-left: 150px;
+}
+
+#home {
+  margin-left: 500px;
+}
