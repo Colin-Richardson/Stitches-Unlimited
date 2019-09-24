@@ -1,27 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <br><br><br><br><br><br><br>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- start of navbar-->
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
+        <a class="navbar-brand" href="#">Stitches Unlimited</a>
       </div>
+      <form class="navbar-form navbar-right" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+        <li><a href="#">Catalogue</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Review</a></li>
+        <li><a href="#">Contact</a></li>
+
       </ul>
     </div>
-  </nav>
 
-  </body>
+  </nav> <!-- end of Navbar -->
+  <div class="container">
+    <!--  start of carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner ">
+
+        <div class="item active">
+          <img src="img/carousel1.jpg" alt="" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>#</h3>
+            <p>#</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/carousel2.jpg" alt="" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>#</h3>
+            <p>#</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/carousel3.jpg" alt="" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>#</h3>
+            <p>#</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div><!-- end of carousel -->
+<br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
 </html>
