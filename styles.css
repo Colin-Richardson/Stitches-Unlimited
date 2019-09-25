@@ -1,6 +1,18 @@
 body {
-  background-color: #B3B3B3;
+  background-color: grey;
 }
-.carousel-inner {
-  border: 4px solid red;
+.navbar-nav{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.navbar-nav a {
+  color: #a11212;
+}
+.logo {
+  height: 100px;
+  width: 110px;
+}
+#carouselExampleIndicators {
+  border: 3px solid #a11212;
 }
