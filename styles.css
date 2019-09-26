@@ -1,13 +1,29 @@
 body {
-  background-color: grey;
+  background-color: #B4B4B4;
+}
+nav{
+  background-color:#B4B4B4;
+  font-size: 20px
 }
 .navbar-nav{
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+   
 }
 .navbar-nav a {
   color: #a11212;
+  padding-bottom: 0px;
+}
+.navbar-nav a:hover{
+color:#6e0c0c
+}
+.navbar-nav a:focus, .navbar-nav a:active{
+color:#ff0808;
+}
+.active{
+ border-bottom: 2px solid #a11212;
+
 }
 .logo {
   height: 100px;
@@ -15,4 +31,13 @@ body {
 }
 #carouselExampleIndicators {
   border: 3px solid #a11212;
+}
+.carouseltitle {
+color: #a11212;
+text-align: center;
+}
+.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
