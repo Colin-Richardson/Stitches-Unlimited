@@ -34,10 +34,20 @@ color:#ff0808;
 }
 .carouseltitle {
 color: #a11212;
-text-align: center;
+padding-left: 300px;
 }
-.carousel-indicators li{
+.carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 100%;
+}
+.home-row {
+  
+  width: 750px;
+  height: 500px;
+  margin-left: 15px;
+}
+.carousel-caption {
+  background: rgba(161, 18, 18, 0.65);
+  
 }
