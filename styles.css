@@ -35,13 +35,10 @@ nav {
   width: 110px;
 }
 
-#carouselExampleIndicators {
-  border: 3px solid #a11212;
-}
-
 .carouseltitle {
   color: #a11212;
-  padding-left: 300px;
+  padding-left: auto;
+  text-align: center;
 }
 
 .carousel-indicators li {
@@ -51,9 +48,7 @@ nav {
 }
 
 .carousel-container {
-  width: 750px;
-  height: 500px;
-  margin-left: 15px;
+  margin-left: 0px;
   margin-right: 0px;
 }
 
@@ -73,22 +68,46 @@ nav {
   padding: 100px;
   color: white;
 }
-.dayitem{
+
+.dayitem {
   width: 250px;
   height: 300px;
-  margin-right: 0px;
-  margin-left: 0px;
   float: right;
+  background-color: rgba(161, 18, 18, 1);
+  text-align: center;
+  margin: 0px 4px;
+  padding: 0px;
+  color: #dbdbdb;
 }
-.dayitemcap{
-  margin-right: 0px;
-  padding-right: 0px;
-        background: rgba(161, 18, 18, 0.65);
-        color: #c7ccd4;
-}
-.dayitemhead{
-margin-left: 0px;
-color: #a11212;
 
-margin-bottom:0px;
+.dayitemimage {
+  width: 250px;
+  height: 300px;
+  border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+
+.dayitemcap {
+  background-color: rgba(161, 18, 18, 0.95);
+}
+
+.sampleleft {
+  height: 700px;
+  width: 225px;
+  margin-left: 10px;
+    border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+
+.undercarousel {
+  margin-left: 15px;
+}
+
+.undercarouselimg {
+  width: 668px;
+  height: 300px;
+  margin-top: 10px;
+  border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+
+#carouselExampleIndicators {
+  border: 3px solid #a11212;
 }
