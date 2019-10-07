@@ -31,10 +31,15 @@ nav {
 }
 
 .logo {
-  height: 70px;
-  width: 80px;
+  height: 77px;
+  width: 87px;
 }
 
+.cart {
+  font-size: 30px;
+  color: #a11212;
+  padding-left: 200%;
+}
 .carouseltitle {
   color: #a11212;
   padding-left: auto;
