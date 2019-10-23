@@ -32,10 +32,14 @@ color: white;
 .activenav {
   border-bottom: 2px solid #a11212;
 }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(161, 18, 18, 0.95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 .logo {
   height: 77px;
   width: 87px;
 }
+
 .carouseltitle {
   color: #a11212;
   padding-left: auto;
@@ -147,4 +151,8 @@ transform: scaleX(1.20) scaleY(1.20);
 
 #carouselExampleIndicators {
   border: 3px solid #a11212;
+}
+#cart{
+  position: absolute;
+  right: 5%;
 }
