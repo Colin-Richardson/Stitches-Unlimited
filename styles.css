@@ -170,7 +170,10 @@ footer {
 .footerlink {
   color: white;
 }
-
+.text-right{
+  text-align: right;
+  margin-right: 5%;
+}
 #carouselExampleIndicators {
   border: 3px solid #a11212;
 }
