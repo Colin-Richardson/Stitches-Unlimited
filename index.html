@@ -35,7 +35,7 @@
     </div>
     <div class="collapse navbar-collapse" id="cart">
       <a class="navbar-brand" href="order.html">
-        <img src="img/cart.png" width="30" height="30" alt="">
+        <img src="img/cart.png" width="30" height="30" onmouseover="hover(this);" onmouseout="unhover(this);">
       </a>
     </div>
   </nav>
@@ -199,18 +199,15 @@
 
     <!-- Copyright -->
     <div class="row">
-      <div class="col-3">
+      <div class="col-4">
 
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <div class="footer-copyright text-center py-3">
           Developed by Panzoid
         </div>
       </div>
-      <div class="col-3">
-
-      </div>
-      <div class="col-3">
+      <div class="col-4">
 
 
         <div class="footer-copyright text-right py-3">
@@ -221,6 +218,17 @@
     <!-- Copyright -->
 
   </footer>
+  <script type="text/javascript">
+
+  function hover(element) {
+  element.setAttribute('src', 'img/Carthover.png');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'img/Cart.png');
+}
+
+</script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
