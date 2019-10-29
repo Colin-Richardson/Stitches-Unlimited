@@ -1,10 +1,18 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 body {
   background-color: #B4B4B4;
 }
 
 nav {
   background-color: #B4B4B4;
-  font-size: 15px
+  font-size: 0.938em;
 }
 
 footer {
@@ -13,7 +21,7 @@ footer {
 }
 
 .navbar-brand {
-  margin-left: -1%;
+  margin-left: 0%;
 }
 
 .navbar-nav {
@@ -24,7 +32,7 @@ footer {
 
 .navbar-nav a {
   color: #a11212;
-  padding-bottom: 0px;
+  padding-bottom: 0%;
 }
 
 .navbar-nav a:hover {
@@ -61,8 +69,8 @@ footer {
 }
 
 .carousel-container {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .carousel-caption {
@@ -81,7 +89,10 @@ footer {
   padding: 100px;
   color: white;
 }
-
+.side-col{
+  margin-left: 0%;
+  margin-right: 0%;
+}
 .dayitem {
   width: 57%;
   /* 250px x 300px */
@@ -108,8 +119,8 @@ footer {
 }
 
 .sampleleft {
-  height: 700px;
-  width: 225px;
+  height: 53.39%;
+  width: 45.18%;
   margin-left: 10px;
   border: 3px rgba(161, 18, 18, 0.95) solid;
 }
@@ -117,10 +128,11 @@ footer {
 .customer {
   position: absolute;
   top: 49%;
-  left: 10%;
+  left: 7%;
   color: white;
   background-color: rgba(161, 18, 18, 0.85);
   padding: 1.5%;
+  font-size: 1.25em;
 }
 
 .homeproducttitle {
@@ -159,6 +171,7 @@ footer {
   text-align: center;
   padding: 10px;
   margin-top: 100%;
+  font-size: 0.938em;
 }
 
 .cardgroup {

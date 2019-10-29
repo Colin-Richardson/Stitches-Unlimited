@@ -35,12 +35,11 @@
     </div>
     <div class="collapse navbar-collapse" id="cart">
       <a class="navbar-brand" href="order.html">
-        <img src="img/cart.png" width="30" height="30" onmouseover="hover(this);" onmouseout="unhover(this);">
+        <img src="img/cart.png" width="30" height="30" onmouseover="carthover(this);" onmouseout="cartunhover(this);">
       </a>
     </div>
   </nav>
   <!-- end of NavBar -->
-
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Stitches Unlimited</h1>
@@ -49,8 +48,7 @@
 
   <h1 class="carouseltitle">Trending</h1>
   <div class="row">
-    <div class="col-3">
-
+    <div class="col-3 side-col">
       <img src="img/mistake2.jpg" alt="" class="sampleleft">
       <h5 class="customer">Satisfied Customer</h5>
     </div>
@@ -185,7 +183,7 @@
         </tr>
       </table>
     </div>
-    <div class="col-3">
+    <div class="col-3 side-col">
       <div class="dayitem">
         <h5 class="dayitemhead">Item of The Day</h5>
         <img src="img/dayitem.jpg" class="dayitemimage" alt="">
@@ -220,11 +218,11 @@
   </footer>
   <script type="text/javascript">
 
-  function hover(element) {
+function carthover(element) {
   element.setAttribute('src', 'img/Carthover.png');
 }
 
-function unhover(element) {
+function cartunhover(element) {
   element.setAttribute('src', 'img/Cart.png');
 }
 
