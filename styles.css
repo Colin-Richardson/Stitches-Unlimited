@@ -142,7 +142,7 @@ footer {
   margin-top: 50px;
 }
 
-.card {
+.cardindex {
   margin-bottom: 30%;
   margin-left: 5%;
   margin-right: 5%;
@@ -151,21 +151,21 @@ footer {
   transition: transform .45s;
 }
 
-.card:hover {
+.cardindex:hover {
   transform: scaleX(1.20) scaleY(1.20);
 }
 
-.card-body {
+.card-body-index {
   padding: 0px;
 }
 
-.card-img {
+.card-img-index {
   width: 100%;
   height: 100%;
   border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 
-.card-title {
+.card-title-index {
   color: white;
   background-color: rgba(161, 18, 18, 0.65);
   text-align: center;
@@ -186,6 +186,24 @@ footer {
 .text-right{
   text-align: right;
   margin-right: 5%;
+}
+.checked {
+  color: #a11212;
+}
+.reviewtable{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.reviewtd{
+  padding: 1%;
+}
+.reviewcard{
+  border: 3px rgba(161, 18, 18, 0.95) solid;
+  width: 500px;
+  height: 150px;
+}
+.review-card-title{
+  margin-bottom:0%;
 }
 #carouselExampleIndicators {
   border: 3px solid #a11212;
