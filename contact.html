@@ -15,43 +15,48 @@
 </head>
 
 <body>
-<div> <!--start of nav and jumbotron -->
-  <!-- start of navbar -->
-  <nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand" href="index.html"><img class="logo" src="img/stitchesesp.jpg" alt="StitchesTN"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarcollapse">
+  <div>
+    <!--start of nav and jumbotron -->
+    <!-- start of navbar -->
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="img/stitchesesp.jpg" alt="StitchesTN"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
 
-      <div class="navbar-nav">
-        <a class="nav-item nav-link " href="index.html">Home </a>
-        <a class="nav-item nav-link " href="catalogue.html">Catalogue</a>
-        <a class="nav-item nav-link" href="about.html">About</a>
-        <a class="nav-item nav-link " href="reviews.html">Reviews</a>
-        <a class="nav-item nav-link activenav" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link " href="index.html">Home </a>
+          <a class="nav-item nav-link " href="catalogue.html">Catalogue</a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link " href="reviews.html">Reviews</a>
+          <a class="nav-item nav-link activenav" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+        </div>
+
       </div>
-
+      <div class="collapse navbar-collapse" id="cart">
+        <a class="navbar-brand" href="order.html">
+          <img src="img/cart.png" width="30" height="30" alt="">
+        </a>
+      </div>
+    </nav>
+    <!-- end of NavBar -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Contact</h1>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="cart">
-      <a class="navbar-brand" href="order.html">
-        <img src="img/cart.png" width="30" height="30" alt="">
-      </a>
-    </div>
-  </nav>
-  <!-- end of NavBar -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Contact</h1>
-    </div>
+  </div> <!-- end of nav and jumbotron -->
+  <div class="contact">
+    <form class="contactform" action="mailto:stitches@click1.net" method="post" enctype="text/plain">
+      <input class="contactinput" id="firstname"type="text" placeholder="First Name" value="" required>
+      <input class="contactinput" id="lastname" type="text" placeholder="Last Name" value="" required> <br>
+      <input class="contactinput" id="email" type="email" name="" placeholder="Email" value="" required> <br>
+      <textarea class="contacttextarea" rows="4" cols="50" placeholder="Enter here"></textarea><br>
+      <input type="submit" value="Send">
+    </form>
   </div>
-</div> <!-- end of nav and jumbotron -->
-<div class="contact">
-
-
-
-
-</div>
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJiy-mIHSufogRv_PUzFWoBzY&key=AIzaSyDD0_A2UQeVmvU2Yz4pR44AigaTDakmPEE" allowfullscreen></iframe>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <!-- Copyright -->
   <footer class="page-footer font-small">
@@ -83,4 +88,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 </html>

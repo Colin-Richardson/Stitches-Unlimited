@@ -36,7 +36,7 @@ footer {
 }
 
 .navbar-nav a:hover {
-  color: #6e0c0c
+  color: #6e0c0c;
 }
 
 .navbar-nav a:focus, .navbar-nav a:active {
@@ -204,6 +204,29 @@ footer {
 }
 .review-card-title{
   margin-bottom:0%;
+}
+.contact{
+  text-align: center;
+}
+.contactform{
+
+}
+.contactinput{
+
+}
+.contacttextarea{
+  margin-top: 0.50%;
+
+}
+#email{
+  margin-top:1%;
+  margin-right: auto;
+}
+#firstname{
+margin-right: 0.5%;
+}
+#lastname{
+margin-left: 0.5%;
 }
 #carouselExampleIndicators {
   border: 3px solid #a11212;
