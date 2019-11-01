@@ -212,15 +212,33 @@ footer {
 
 }
 .contactinput{
-
+border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 .contacttextarea{
   margin-top: 0.50%;
-
+border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+.map{
+  float:right;
+  margin-right: 2%;
+  padding: 0px;
+  border: 3px rgba(161, 18, 18, 0.95) solid;
+  background-color: white;
+}
+.submit{
+  background-color: #a11212;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+.submit:hover{
+    background-color: #6e0c0c;;
 }
 #email{
   margin-top:1%;
   margin-right: auto;
+
 }
 #firstname{
 margin-right: 0.5%;
