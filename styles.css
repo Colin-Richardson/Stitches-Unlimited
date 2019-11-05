@@ -239,7 +239,7 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
   width: 22%;
   height: 400px;
   margin-right: 15px;
-  background: #B4B4B4;
+  background: rgba(255, 0, 0, 0);
 
 
 
@@ -281,6 +281,19 @@ display:         flex;
    transform: scale(1);
 -webkit-transition:  -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
    transition: transform 0.3s, filter 0.3s;
+}
+.flickity-page-dots{
+    display:none;
+}
+.catalogue-category{
+    text-align: center;
+  background-color: #B4B4B4;
+  color: rgba(133, 18, 18, 0.9);
+}
+.catalogue-category-alt{
+  text-align: center;
+  background-color: rgba(133, 18, 18, 0.9);
+  color: #B4B4B4;
 }
 .about {
   color: #a11212;
