@@ -322,7 +322,8 @@ display:         flex;
   opacity: 0;
 height: 250px;
 width: 175px;
-max-width: 200px;
+max-width: 175px;
+max-height: 250px;
 }
 .is-selected .catalogue-cap{
   bottom: 20%;
@@ -362,7 +363,8 @@ animation-duration: 1s;
   opacity: 0;
 height: 250px;
 width: 175px;
-max-width: 200px;
+max-width: 175px;
+max-height: 250px;
 }
 .is-selected .catalogue-cap-alt{
   bottom: 20%;
