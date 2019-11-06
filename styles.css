@@ -346,6 +346,7 @@ animation-duration: 1s;
   font-weight: bold;
   overflow-wrap: break-word;
   max-width: 200px;
+  color: rgba(133, 18, 18, 0.90);
 }
 .anchor-catalogue-alt:hover{
   text-decoration: none;
@@ -355,8 +356,7 @@ animation-duration: 1s;
   position: absolute;
   bottom: 15%;
   text-align: center;
-  background-color: rgba(133, 18, 18, 0.90);
-  color: white;
+  background-color: rgba(180, 180, 180, 0.90);
   padding: 20px;
   transition: bottom 1s linear,  left 1s linear;
   opacity: 0;
@@ -380,6 +380,11 @@ animation-duration: 1s;
 	100% {
 		opacity: 1;
 	}
+}
+.paragraph-catalogue-alt{
+  text-decoration: none;
+    overflow-wrap: break-word;
+    color: rgba(133, 18, 18, 0.90);
 }
 .about {
   color: #a11212;
