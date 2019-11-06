@@ -297,6 +297,13 @@ display:         flex;
   background-color: rgba(133, 18, 18, 0.9);
   color: #B4B4B4;
 }
+.anchor-catalogue{
+  text-decoration: none;
+}
+.anchor-catalogue:hover{
+  text-decoration: none;
+  color: white;
+}
 .cuttingboard-cap{
   position: absolute;
   bottom: -25%;
@@ -306,6 +313,7 @@ display:         flex;
   padding: 15px;
   transition: bottom 1.25s linear;
   opacity: 0;
+
 }
 .is-selected .cuttingboard-cap{
   bottom: 15%;
