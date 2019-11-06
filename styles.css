@@ -218,11 +218,9 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
 border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 .map{
-  float:right;
-  margin-right: 2%;
-  padding: 0%;
   border: 3px rgba(161, 18, 18, 0.95) solid;
-  height: 79%;
+height: 100%;
+width: 90%;
 }
 .contact-info {
   color: #a11212;
