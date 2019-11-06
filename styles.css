@@ -132,7 +132,7 @@ footer {
   color: white;
   background-color: rgba(161, 18, 18, 0.85);
   padding: 1.5%;
-  font-size: 1.25em;
+  font-size: 100%;
 }
 
 .homeproducttitle {
@@ -199,8 +199,7 @@ footer {
 }
 .reviewcard{
   border: 3px rgba(161, 18, 18, 0.95) solid;
-  width: 500px;
-  height: 150px;
+
 }
 .review-card-title{
   margin-bottom:0%;
@@ -221,9 +220,12 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
 .map{
   float:right;
   margin-right: 2%;
-  padding: 0px;
+  padding: 0%;
   border: 3px rgba(161, 18, 18, 0.95) solid;
-  background-color: white;
+  height: 79%;
+}
+.contact-info {
+  color: #a11212;
 }
 .submit{
   background-color: #a11212;
@@ -231,9 +233,12 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
   color: white;
   padding: 15px 32px;
   cursor: pointer;
+  transition: border-radius 1s;
 }
 .submit:hover{
-    background-color: #6e0c0c;;
+  background-color: #6e0c0c;
+  border-radius: 25%;
+
 }
 .carousel-cell {
   width: 22%;
