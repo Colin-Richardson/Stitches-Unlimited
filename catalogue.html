@@ -6,7 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
@@ -15,84 +15,131 @@
 </head>
 
 <body>
-<div> <!--start of nav and jumbotron -->
-  <!-- start of navbar -->
-  <nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand" href="index.html"><img class="logo" src="img/stitchesesp.jpg" alt="StitchesTN"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarcollapse">
+  <div>
+    <!--start of nav and jumbotron -->
+    <!-- start of navbar -->
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="img/stitchesesp.jpg" alt="StitchesTN"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
 
-      <div class="navbar-nav">
-        <a class="nav-item nav-link " href="index.html">Home </a>
-        <a class="nav-item nav-link activenav" href="catalogue.html">Catalogue<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="about.html">About</a>
-        <a class="nav-item nav-link" href="reviews.html">Reviews</a>
-        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link " href="index.html">Home </a>
+          <a class="nav-item nav-link activenav" href="catalogue.html">Catalogue<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="reviews.html">Reviews</a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
+        </div>
+
       </div>
-
+      <div class="collapse navbar-collapse" id="cart">
+        <a class="navbar-brand" href="order.html">
+          <img src="img/cart1.png" width="30" height="30" onmouseover="carthover(this);" onmouseout="cartunhover(this);">
+        </a>
+      </div>
+    </nav>
+    <!-- end of NavBar -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Catalogue</h1>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="cart">
-      <a class="navbar-brand" href="order.html">
-        <img src="img/cart1.png" width="30" height="30" onmouseover="carthover(this);" onmouseout="cartunhover(this);">
-      </a>
+  </div> <!-- end of nav and jumbotron -->
+  <div class="catalogue-category">
+    <h2>New Additions</h2><br>
+    <div class="cataloguecarousel">
+      <div class="carousel js-flickity" data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
+        <div class="carousel-cell"><img src="img/cuttingboard.png" alt="">
+          <div class="container catalogue-cap">
+            <a class="anchor-catalogue" href="#">Bamboo Cutting Board</a><br>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+          </div>
+        </div>
+        <div class="carousel-cell"><img src="img/petbowl.png" alt="">
+          <div class="container catalogue-cap">
+          <a class=" anchor-catalogue" href="#">Pet Bowl</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+        <div class="carousel-cell"><img src="img/replicabuic.png" alt="">
+          <div class="container catalogue-cap">
+          <a class=" anchor-catalogue" href="#">Replica Buic</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+        <div class="carousel-cell"><img src="img/slapbracelet.png" alt="">
+          <div class="container catalogue-cap">
+          <a class=" anchor-catalogue" href="#">Slap Bracelets</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+        <div class="carousel-cell"><img src="img/suprisedduck.png" alt="">
+          <div class="container catalogue-cap">
+          <a class=" anchor-catalogue" href="#">Suprised Duck</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+      </div>
     </div>
-  </nav>
-  <!-- end of NavBar -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Catalogue</h1>
-    </div>
+    <br><br>
   </div>
-</div> <!-- end of nav and jumbotron -->
-<div class="catalogue-category">
-<h2>New Additions</h2><br>
-<div class="cataloguecarousel">
+  <div class="catalogue-category-alt">
+    <br>
+    <h2 class="catalogue-text">Backpacks</h2><br>
+    <div class="cataloguecarousel">
+<div class="carousel js-flickity" data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
 
-<div class="carousel js-flickity"
-data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
-<div class="carousel-cell"><img src="img/cuttingboard.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Bamboo Cutting Board</a></div>
-<div class="carousel-cell"><img src="img/petbowl.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Pet Bowl</a></div>
-<div class="carousel-cell"><img src="img/replicabuic.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Replica Buic</a></div>
-<div class="carousel-cell"><img src="img/slapbracelet.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Slap Bracelets</a></div>
-<div class="carousel-cell"><img src="img/suprisedduck.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Suprised Duck</a></div>
-</div>
-</div>
-<br><br>
-</div>
-<div class="catalogue-category-alt">
-<br>
-<h2 class="catalogue-text">Backpacks</h2><br>
-<div class="cataloguecarousel">
+        <div class="carousel-cell "><img src="img/laptopbag.png" alt="">
+          <div class="container catalogue-cap-alt">
+          <a class=" anchor-catalogue-alt" href="#">Laptop Bag</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+        <div class="carousel-cell "><img src="img/drawstringbag.png" alt="">
+          <div class="container catalogue-cap-alt">
+          <a class="anchor-catalogue-alt" href="#">Drawstring Bag</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+        <div class="carousel-cell "><img src="img/everydaybag.png" alt="">
+          <div class="container catalogue-cap-alt">
+          <a class=" anchor-catalogue-alt" href="#">Everyday Bag</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+        <div class="carousel-cell "><img src="img/marcopolobag.png" alt="">
+          <div class="container catalogue-cap-alt">
+          <a class=" anchor-catalogue-alt" href="#">Marco Polo Bag</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        </div>
+        </div>
+        <div class="carousel-cell "><img src="img/tacticalbag.png" alt="">
+          <div class="container catalogue-cap-alt">
+          <a class=" anchor-catalogue-alt" href="#">Tactical Backpack</a>
+            <p class="paragraph-catalogue">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <div class="catalogue-category">
+    <br>
+    <h2 class="catalogue-text">Gifts</h2><br>
+    <div class="cataloguecarousel">
 
-<div class="carousel js-flickity"
-data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
-<div class="carousel-cell "><img src="img/laptopbag.png" alt=""><a class="catalogue-cap-alt anchor-catalogue-alt" href="#">Laptop Bag</a></div>
-<div class="carousel-cell "><img src="img/drawstringbag.png" alt=""><a class="catalogue-cap-alt anchor-catalogue-alt" href="#">Drawstring Bag</a></div>
-<div class="carousel-cell "><img src="img/everydaybag.png" alt=""><a class="catalogue-cap-alt anchor-catalogue-alt" href="#">Everyday Bag</a></div>
-<div class="carousel-cell "><img src="img/marcopolobag.png" alt=""><a class="catalogue-cap-alt anchor-catalogue-alt" href="#">Marco Polo Bag</a></div>
-<div class="carousel-cell "><img src="img/tacticalbag.png" alt=""><a class="catalogue-cap-alt anchor-catalogue-alt" href="#">Tactical Backpack</a></div>
-</div>
-</div>
-<br><br>
-</div>
-<div class="catalogue-category">
-<br>
-<h2 class="catalogue-text">Gifts</h2><br>
-<div class="cataloguecarousel">
-
-<div class="carousel js-flickity"
-data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
-<div class="carousel-cell"><img src="img/goldshovel.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Golden Shovel</a></div>
-<div class="carousel-cell"><img src="img/diamondfridge.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Diamond Fridge</a></div>
-<div class="carousel-cell"><img src="img/headphones.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Headphones</a></div>
-<div class="carousel-cell"><img src="img/chair.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Chair</a></div>
-<div class="carousel-cell"><img src="img/mixer.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Mixer</a></div>
-</div>
-</div>
-  <br><br><br>
-</div>
+      <div class="carousel js-flickity" data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
+        <div class="carousel-cell"><img src="img/goldshovel.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Golden Shovel</a></div>
+        <div class="carousel-cell"><img src="img/diamondfridge.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Diamond Fridge</a></div>
+        <div class="carousel-cell"><img src="img/headphones.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Headphones</a></div>
+        <div class="carousel-cell"><img src="img/chair.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Chair</a></div>
+        <div class="carousel-cell"><img src="img/mixer.png" alt=""><a class="catalogue-cap anchor-catalogue" href="#">Mixer</a></div>
+      </div>
+    </div>
+    <br><br><br>
+  </div>
   <footer class="page-footer font-small">
 
     <!-- Copyright -->
@@ -119,19 +166,18 @@ data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!-- Optional JavaScript -->
   <script type="text/javascript">
+    function carthover(element) {
+      element.setAttribute('src', 'img/cart2.png');
+    }
 
-function carthover(element) {
-  element.setAttribute('src', 'img/cart2.png');
-}
-
-function cartunhover(element) {
-  element.setAttribute('src', 'img/cart1.png');
-}
-
-</script>
+    function cartunhover(element) {
+      element.setAttribute('src', 'img/cart1.png');
+    }
+  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -301,25 +301,33 @@ display:         flex;
   text-decoration: none;
     font-weight: bold;
     overflow-wrap: break-word;
-    max-width: 200px;
+
+    color: white;
 }
 .anchor-catalogue:hover{
   text-decoration: none;
   color: white;
 }
+.paragraph-catalogue{
+  text-decoration: none;
+    overflow-wrap: break-word;
+    color: white;
+}
 .catalogue-cap{
   position: absolute;
-  bottom: 60%;
+  bottom: 15%;
   text-align: center;
   background-color: rgba(133, 18, 18, 0.90);
   color: white;
   padding: 20px;
   transition: bottom 1s linear,  left 1s linear;
   opacity: 0;
-
+height: 250px;
+width: 175px;
+max-width: 200px;
 }
 .is-selected .catalogue-cap{
-  bottom: 65%;
+  bottom: 20%;
   left: -25%;
   opacity: 1;
 animation-name: fadeInOpacity;
@@ -347,17 +355,19 @@ animation-duration: 1s;
 }
 .catalogue-cap-alt{
   position: absolute;
-  bottom: 60%;
+  bottom: 15%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.90);
-  color: rgba(133, 18, 18, 1);
+  background-color: rgba(133, 18, 18, 0.90);
+  color: white;
   padding: 20px;
-  transition: bottom 1s linear;
+  transition: bottom 1s linear,  left 1s linear;
   opacity: 0;
-
+height: 250px;
+width: 175px;
+max-width: 200px;
 }
 .is-selected .catalogue-cap-alt{
-  bottom: 65%;
+  bottom: 20%;
   left: -25%;
   opacity: 1;
 animation-name: fadeInOpacity;
