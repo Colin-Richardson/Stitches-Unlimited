@@ -304,18 +304,18 @@ display:         flex;
   text-decoration: none;
   color: white;
 }
-.cuttingboard-cap{
+.catalogue-cap{
   position: absolute;
-  bottom: -25%;
+  bottom: 10%;
   text-align: center;
-  background-color: rgba(133, 18, 18, 1);
+  background-color: rgba(133, 18, 18, 0.90);
   color: white;
   padding: 15px;
   transition: bottom 1.25s linear;
   opacity: 0;
 
 }
-.is-selected .cuttingboard-cap{
+.is-selected .catalogue-cap{
   bottom: 15%;
   opacity: 1;
 animation-name: fadeInOpacity;
