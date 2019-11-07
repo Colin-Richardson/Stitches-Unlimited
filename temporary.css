@@ -294,10 +294,17 @@ display:         flex;
   width: 100%;
   border: 3px rgba(161, 18, 18, 0.95) solid;
 }
+.awardgroup{
+  margin-right: 10%;
+}
 .award {
   border: 2px rgba(161, 18, 18, 0.95) solid;
-  width: 100%
+  width: 200px;
+  height: auto;
+  float: right;
+  margin-right: 5%
 }
+
 #email{
   margin-top:1%;
   margin-right: auto;
