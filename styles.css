@@ -19,9 +19,7 @@ footer {
   background-color: rgba(133, 18, 18, 0.9);
   color: white;
 }
-#navbar{
-  padding-bottom: 0%;
-}
+
 .navbar-brand {
   margin-left: 0%;
 }
@@ -397,10 +395,19 @@ animation-duration: 1s;
 .about-body {
   color: #9c1313;
 }
+.product-img{
+height: 75%;
+width: auto;
+border: 2px solid #a11212;
+padding: 0%;
+}
+.product-header{
+  text-align: center;
+  color: #a11212;
+}
 #email{
   margin-top:1%;
   margin-right: auto;
-
 }
 #firstname{
 margin-right: 0.5%;
@@ -415,4 +422,7 @@ margin-left: 0.5%;
 #cart {
   position: absolute;
   right: 2%;
+}
+#navbar{
+  padding-bottom: 0%;
 }
