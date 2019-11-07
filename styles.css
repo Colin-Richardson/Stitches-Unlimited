@@ -405,6 +405,10 @@ padding: 0%;
   text-align: center;
   color: #a11212;
 }
+.product-paragraph{
+  text-align: left;
+  margin-left: 10%
+}
 #email{
   margin-top:1%;
   margin-right: auto;
