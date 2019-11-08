@@ -271,7 +271,7 @@ display:         flex;
   font-size: 80px;
   color: white;
 }
-.carousel-cell img {
+.catalogueimg {
   width: 300px;
   height: 400px;
   margin-right: 15px;
@@ -401,13 +401,86 @@ width: auto;
 border: 2px solid #a11212;
 padding: 0%;
 }
+
 .product-header{
-  text-align: center;
+  text-align: left;
   color: #a11212;
+  margin-left: 10%;
 }
 .product-paragraph{
   text-align: left;
-  margin-left: 10%
+  margin-left: 10%;
+  max-width: 50%;
+  color: #a11212;
+}
+.product-table{
+  margin-left: 10%;
+  border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+.product-table, .product-table td, .product-table th{
+    border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+.product-th th{
+    background-color: #a11212;
+    color: white;
+}
+
+.product-category{
+    text-align: center;
+  background-color: #b4b4b4;
+  color: rgba(133, 18, 18, 0.9);
+  border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+.anchor-product{
+  text-decoration: none;
+    font-weight: bold;
+    overflow-wrap: break-word;
+
+    color: white;
+}
+.anchor-product:hover{
+  text-decoration: none;
+  color: white;
+}
+.paragraph-product{
+  text-decoration: none;
+    overflow-wrap: break-word;
+    color: white;
+}
+.product-cap{
+  position: absolute;
+  bottom: -10%%;
+  text-align: center;
+  background-color: rgba(133, 18, 18, 0.90);
+  color: white;
+  padding: 20px;
+  transition: bottom 1s linear,  left 1s linear;
+  opacity: 0;
+height: 75px;
+width: 200px;
+max-width: 175px;
+max-height: 250px;
+}
+.is-selected .product-cap{
+  bottom: 20%;
+  opacity: 1;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+animation-duration: 1s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.productimg{
+    width: 150px;
+    height: 200px;
+    margin-right: 10px;
 }
 #email{
   margin-top:1%;

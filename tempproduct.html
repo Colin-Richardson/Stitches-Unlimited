@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
@@ -15,8 +15,6 @@
 </head>
 
 <body>
-
-
   <nav class="navbar navbar-expand-lg " id="navbar">
     <a class="navbar-brand" href="index.html"><img class="logo" src="img/logoalt.jpg" alt="StitchesTN"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +24,7 @@
 
       <div class="navbar-nav">
         <a class="nav-item nav-link activenav" href="index.html">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="catalogue.html">Catalogue</a>
+        <a class="nav-item nav-link" href="product.html">product</a>
         <a class="nav-item nav-link" href="about.html">About</a>
         <a class="nav-item nav-link" href="reviews.html">Reviews</a>
         <a class="nav-item nav-link" href="contact.html">Contact</a>
@@ -44,26 +42,92 @@
       <h1 class="display-4">Stitches Unlimited</h1>
     </div>
   </div>
-<div class="row">
-
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-3">
+      <br><br>
+      <img src="img/cuttingboard.png" class="product-img" class= "productimg" alt="">
+    </div>
+    <div class="col-5">
+      <br>
+      <h1 class="product-header">Bamboo Cutting board</h1><br>
+      <p class="product-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <br>
+      <table class="product-table">
+        <tr class=".product-th">
+          <th>Quantity</th>
+          <th>1</th>
+          <th>10</th>
+          <th>25</th>
+          <th>50</th>
+          <th>100</th>
+          <th>200</th>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>QUR</td>
+          <td>QUR</td>
+          <td>QUR</td>
+          <td>QUR</td>
+          <td>QUR</td>
+          <td>QUR</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+  <div class="row">
 <div class="col-2">
 
 </div>
-<div class="col-3">
-  <br><br>
-<img src="img/cuttingboard.png" class="product-img" alt="">
-</div>
-<div class="col-5">
-<br>
-<h1 class="product-header">Cutting board</h1>
-<p class="product-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="col-2">
+    <div class="col-8">
 
-</div>
 
-</div>
+      <h2>Similar Items</h2><br>
+        <div class="product-category">
+      <div class="productcarousel">
+        <div class="carousel js-flickity" data-flickity-options='{"freeScroll": false, "wrapAround": true}'>
+          <div class="carousel-cell"><img src="img/cuttingboard.png" class= "productimg" alt="">
+            <div class="container product-cap">
+              <a class="anchor-product" href="#">Bamboo Cutting Board</a><br>
 
+            </div>
+          </div>
+          <div class="carousel-cell"><img src="img/petbowl.png" class= "productimg" alt="">
+            <div class="container product-cap">
+            <a class=" anchor-product" href="#">Pet Bowl</a>
+
+          </div>
+          </div>
+          <div class="carousel-cell"><img src="img/replicabuic.png" class= "productimg" alt="">
+            <div class="container product-cap">
+            <a class=" anchor-product" href="#">Replica Buic</a>
+
+          </div>
+          </div>
+          <div class="carousel-cell"><img src="img/slapbracelet.png" class= "productimg" alt="">
+            <div class="container product-cap">
+            <a class=" anchor-product" href="#">Slap Bracelets</a>
+
+          </div>
+          </div>
+          <div class="carousel-cell"><img src="img/suprisedduck.png" class= "productimg" alt="">
+            <div class="container product-cap">
+            <a class=" anchor-product" href="#">Suprised Duck</a>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+
+  </div>
+</div>
 
 
 
@@ -93,16 +157,15 @@
 
   </footer>
   <script type="text/javascript">
+    function carthover(element) {
+      element.setAttribute('src', 'img/cart2.png');
+    }
 
-function carthover(element) {
-  element.setAttribute('src', 'img/cart2.png');
-}
-
-function cartunhover(element) {
-  element.setAttribute('src', 'img/cart1.png');
-}
-
-</script>
+    function cartunhover(element) {
+      element.setAttribute('src', 'img/cart1.png');
+    }
+  </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
