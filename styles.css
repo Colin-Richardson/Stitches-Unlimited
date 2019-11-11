@@ -428,13 +428,13 @@ padding: 0%;
     text-align: center;
   background-color: #b4b4b4;
   color: rgba(133, 18, 18, 0.9);
-  border: 3px rgba(161, 18, 18, 0.95) solid;
+  border: 3px solid rgba(133, 18, 18, 0.9);
+  border-bottom: 0px;
 }
 .anchor-product{
   text-decoration: none;
     font-weight: bold;
     overflow-wrap: break-word;
-
     color: white;
 }
 .anchor-product:hover{
@@ -448,20 +448,20 @@ padding: 0%;
 }
 .product-cap{
   position: absolute;
-  bottom: -10%%;
+  bottom: 0%;
   text-align: center;
   background-color: rgba(133, 18, 18, 0.90);
   color: white;
   padding: 20px;
   transition: bottom 1s linear,  left 1s linear;
-  opacity: 0;
 height: 75px;
 width: 200px;
 max-width: 175px;
 max-height: 250px;
+opacity: 0;
 }
 .is-selected .product-cap{
-  bottom: 20%;
+  bottom: 0%;
   opacity: 1;
 animation-name: fadeInOpacity;
 animation-iteration-count: 1;
@@ -480,6 +480,39 @@ animation-duration: 1s;
     width: 150px;
     height: 200px;
     margin-right: 10px;
+    position: absolute;
+    top: 3%;
+}
+.carousel-cell-product {
+  width: 25%;
+  height: 300px;
+  margin-right: 15px;
+  background: rgba(255, 0, 0, 0);
+
+  display: -webkit-box;
+display: -webkit-flex;
+display:         flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+        justify-content: center;
+-webkit-align-items: center;
+        align-items: center;
+
+
+
+        -webkit-transform: scale(0.85);
+         transform: scale(0.85);
+ -webkit-transition:  -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+         transition: transform 0.3s, filter 0.3s;
+}
+
+/* cell number */
+.carousel-cell-product:before {
+  display: block;
+  text-align: center;
+  line-height: 400px;
+  font-size: 80px;
+  color: white;
 }
 #email{
   margin-top:1%;
