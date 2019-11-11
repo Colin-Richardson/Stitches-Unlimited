@@ -22,11 +22,16 @@ footer {
 
 .navbar-brand {
   margin-left: 0%;
+  margin-right: 1%;
 }
+
+.navbar-nav {
+margin-left: 1%
+}
+
 .navbar-nav a {
   color: #a11212;
   padding-bottom: 0%;
-  max-width: 45px;
 }
 
 .navbar-nav a:hover {
