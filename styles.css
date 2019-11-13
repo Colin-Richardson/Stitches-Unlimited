@@ -26,7 +26,7 @@ footer {
 }
 
 .navbar-nav {
-margin-left: 1%
+margin-left: 1%;
 }
 
 .navbar-nav a {
@@ -513,6 +513,28 @@ display:         flex;
   line-height: 400px;
   font-size: 80px;
   color: white;
+}
+.about {
+  color: #a11212;
+  text-align: center;
+}
+.about-body {
+  color: #9c1313;
+  padding: 1%;
+}
+.business {
+  width: 100%;
+  border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+.awardgroup{
+  margin-right: 10%;
+}
+.award {
+  border: 2px rgba(161, 18, 18, 0.95) solid;
+  width: 200px;
+  height: auto;
+  float: right;
+  margin-right: 5%
 }
 #email{
   margin-top:1%;
