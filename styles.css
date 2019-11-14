@@ -8,6 +8,7 @@ html,body
 }
 body {
   background-color: #B4B4B4;
+
 }
 
 nav {
@@ -268,7 +269,7 @@ display:         flex;
   text-align: center;
   line-height: 400px;
   font-size: 80px;
-  color: white;
+
 }
 .catalogueimg {
   width: 300px;
@@ -305,10 +306,27 @@ display:         flex;
   text-decoration: none;
   color: white;
 }
+.anchor-catalogue-price{
+  text-decoration: none;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+.anchor-catalogue-price:hover{
+  text-decoration: none;
+  color: white;
+}
 .paragraph-catalogue{
   text-decoration: none;
     overflow-wrap: break-word;
     color: white;
+}
+.paragraph-catalogue:hover{
+  text-decoration: none;
+  color: white;
 }
 .catalogue-cap{
   position: absolute;
@@ -352,6 +370,19 @@ animation-duration: 1s;
   text-decoration: none;
   color: rgba(133, 18, 18, 1);
 }
+.anchor-catalogue-price-alt{
+  text-decoration: none;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    color: #a11212;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+.anchor-catalogue-price-alt:hover{
+  text-decoration: none;
+  color: #a11212;
+}
 .catalogue-cap-alt{
   position: absolute;
   bottom: 15%;
@@ -385,7 +416,12 @@ animation-duration: 1s;
 .paragraph-catalogue-alt{
   text-decoration: none;
     overflow-wrap: break-word;
-    color: rgba(133, 18, 18, 0.90);
+    color: #a11212;
+}
+.paragraph-catalogue-alt:hover{
+  text-decoration: none;
+    overflow-wrap: break-word;
+    color: #a11212;
 }
 .about {
   color: #a11212;
@@ -395,8 +431,8 @@ animation-duration: 1s;
   color: #9c1313;
 }
 .product-img{
-height: 75%;
-width: auto;
+height: auto;
+width: 100%;
 border: 2px solid #a11212;
 padding: 0%;
 }
