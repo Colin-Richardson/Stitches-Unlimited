@@ -8,7 +8,6 @@ html,body
 }
 body {
   background-color: #B4B4B4;
-
 }
 
 nav {
@@ -571,12 +570,12 @@ display:         flex;
   width: 100%;
   border: 3px rgba(161, 18, 18, 0.95) solid;
 }
-.awardgroup{
-  margin-right: 10%;
+.awardgroup {
+  margin-top: 7%;
 }
 .award {
   border: 2px rgba(161, 18, 18, 0.95) solid;
-  width: 200px;
+  width: 25%;
   height: auto;
   float: right;
   margin-right: 5%
