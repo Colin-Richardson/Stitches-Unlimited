@@ -162,16 +162,17 @@
   //  document.cookie += document.getElementById('item').innerHTML + "<br>";
   //   document.getElementById('test').innerHTML = document.cookie;
   //  }
-    document.cookie = true;
-    function cookieenable(){
-      document.cookie = true;
-    }
-    if (document.cookie = false){
+    document.cookie = false;
+    if (document.cookie == false){
     document.getElementById('cookiealert').innerHTML = "<div class="cookiealert">
       <h3 class="cookieh3">This website is cookie enabled, click agree to continue</h3>
       <input type="submit" class="cookiesubmit" value="Agree" onclick="cookieenable()">
-    </div>"
+    </div>";
     }
+    function cookieenable(){
+      document.cookie = true;
+    }
+
   </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!-- Optional JavaScript -->
