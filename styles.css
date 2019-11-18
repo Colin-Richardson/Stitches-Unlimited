@@ -601,3 +601,30 @@ margin-left: 0.5%;
 #navbar{
   padding-bottom: 0%;
 }
+.cookiealert{
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  height: 100px;
+  width: 100%;
+}
+.cookiesubmit{
+  position: absolute;
+  bottom: 25%;
+  right: 1%;
+  background-color: #a11212;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+.cookiesubmit :hover{
+  background-color: #6e0c0c;
+}
+.cookieh3{
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+}
