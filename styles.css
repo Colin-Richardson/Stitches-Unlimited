@@ -462,7 +462,19 @@ background: white;
 }
 .product-table td{
     background-color: white;
-    
+
+}
+.addtocart{
+  background-color: #a11212;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+  float: right;
+  margin-right: 60%;
+}
+.addtocart:hover{
+  background-color: #6e0c0c;
 }
 .product-h2{
   text-align: center;
@@ -492,12 +504,12 @@ background: white;
 }
 .product-cap{
   position: absolute;
-  bottom: 0%;
+  bottom: 5%;
   text-align: center;
   background-color: rgba(133, 18, 18, 0.90);
   color: white;
   padding: 20px;
-  transition: bottom 1s linear,  left 1s linear;
+
 height: 75px;
 width: 200px;
 max-width: 175px;
@@ -505,20 +517,8 @@ max-height: 250px;
 opacity: 0;
 }
 .is-selected .product-cap{
-  bottom: 0%;
+  bottom: 5%;
   opacity: 1;
-animation-name: fadeInOpacity;
-animation-iteration-count: 1;
-animation-timing-function: linear;
-animation-duration: 1s;
-}
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
 }
 .productimg{
     width: 150px;
