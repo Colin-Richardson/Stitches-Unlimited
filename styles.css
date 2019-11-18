@@ -435,6 +435,7 @@ height: auto;
 width: 100%;
 border: 2px solid #a11212;
 padding: 0%;
+background: white;
 }
 
 .product-header{
@@ -459,7 +460,14 @@ padding: 0%;
     background-color: #a11212;
     color: white;
 }
-
+.product-table td{
+    background-color: white;
+    
+}
+.product-h2{
+  text-align: center;
+  color: #a11212;
+}
 .product-category{
     text-align: center;
   background-color: #b4b4b4;
@@ -518,6 +526,7 @@ animation-duration: 1s;
     margin-right: 10px;
     position: absolute;
     top: 3%;
+
 }
 .carousel-cell-product {
   width: 25%;
