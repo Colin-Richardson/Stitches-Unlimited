@@ -76,12 +76,12 @@
         </tr>
         <tr>
           <td>Price</td>
-          <td>QUR</td>
-          <td>QUR</td>
-          <td>QUR</td>
-          <td>QUR</td>
-          <td>QUR</td>
-          <td>QUR</td>
+          <td id="price1">QUR</td>
+          <td id="price2">QUR</td>
+          <td id="price3">QUR</td>
+          <td id="price4">QUR</td>
+          <td id="price5">QUR</td>
+          <td id="price6">QUR</td>
           <td id="price"></td>
         </tr>
       </table>
@@ -170,27 +170,28 @@
     }
      function addtocart(){
      document.cookie += document.getElementById('item').innerHTML + quantity + "<br>";
-     document.getElementById('test').innerHTML = document.cookie
+    // remove comment below to test cookie output
+    //  document.getElementById('test').innerHTML = document.cookie
     }
     function price(){
        let quantity = document.getElementById('amount').value;
        if(quantity === "1"){
-         document.getElementById('price').innerHTML = "1";
+         document.getElementById('price').innerHTML = price1;
        }
        if(quantity === "10"){
-         document.getElementById('price').innerHTML = "10";
+         document.getElementById('price').innerHTML = price2;
        }
        if(quantity === "25"){
-         document.getElementById('price').innerHTML = "25";
+         document.getElementById('price').innerHTML = price3;
        }
        if(quantity === "50"){
-         document.getElementById('price').innerHTML = "50";
+         document.getElementById('price').innerHTML = price4;
        }
        if(quantity === "100"){
-         document.getElementById('price').innerHTML = "100";
+         document.getElementById('price').innerHTML = price5;
        }
        if(quantity === "200"){
-         document.getElementById('price').innerHTML = "200";
+         document.getElementById('price').innerHTML = price6;
        }
      }
   </script>
