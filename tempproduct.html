@@ -82,7 +82,7 @@
           <td id="price4">QUR</td>
           <td id="price5">QUR</td>
           <td id="price6">QUR</td>
-          <td id="price"></td>
+          <td id="price">QUR</td>
         </tr>
       </table>
       <br>
@@ -176,22 +176,22 @@
     function price(){
        let quantity = document.getElementById('amount').value;
        if(quantity === "1"){
-         document.getElementById('price').innerHTML = price1;
+         document.getElementById('price').innerHTML = document.getElementById('price1').innerHTML;
        }
        if(quantity === "10"){
-         document.getElementById('price').innerHTML = price2;
+         document.getElementById('price').innerHTML = document.getElementById('price2').innerHTML;
        }
        if(quantity === "25"){
-         document.getElementById('price').innerHTML = price3;
+         document.getElementById('price').innerHTML = document.getElementById('price3').innerHTML;
        }
        if(quantity === "50"){
-         document.getElementById('price').innerHTML = price4;
+         document.getElementById('price').innerHTML = document.getElementById('price4').innerHTML;
        }
        if(quantity === "100"){
-         document.getElementById('price').innerHTML = price5;
+         document.getElementById('price').innerHTML = document.getElementById('price5').innerHTML;
        }
        if(quantity === "200"){
-         document.getElementById('price').innerHTML = price6;
+         document.getElementById('price').innerHTML = document.getElementById('price6').innerHTML;
        }
      }
   </script>
