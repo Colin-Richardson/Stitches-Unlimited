@@ -63,6 +63,16 @@
           <th>50</th>
           <th>100</th>
           <th>200</th>
+          <th>
+            <select id="amount" onchange="price()">
+              <option value="1">1</option>
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+              <option value="200">200</option>
+            </select>
+          </th>
         </tr>
         <tr>
           <td>Price</td>
@@ -72,6 +82,7 @@
           <td>QUR</td>
           <td>QUR</td>
           <td>QUR</td>
+          <td id="price"></td>
         </tr>
       </table>
       <br>
@@ -125,7 +136,7 @@
 
   </div>
 </div>
-<div id="cookiealert"></div>
+
   <footer class="page-footer font-small">
 
     <!-- Copyright -->
@@ -157,21 +168,30 @@
     function cartunhover(element) {
       element.setAttribute('src', 'img/cart1.png');
     }
-  //  function addtocart(){
-  //  document.cookie += document.getElementById('item').innerHTML + "<br>";
-  //   document.getElementById('test').innerHTML = document.cookie;
-  //  }
-    document.cookie = false;
-    if (document.cookie == false){
-    document.getElementById('cookiealert').innerHTML = "<div class="cookiealert"> 
-    <h3 class="cookieh3">This website is cookie enabled, click agree to continue</h3>
-    <input type="submit" class="cookiesubmit" value="Agree" onclick="cookieenable()">
-    </div>";
+     function addtocart(){
+     document.cookie += document.getElementById('item').innerHTML + quantity + "<br>";
     }
-    function cookieenable(){
-      document.cookie = true;
-    }
-
+    function price(){
+       let quantity = document.getElementById('amount').value;
+       if(quantity === "1"){
+         document.getElementById('price').innerHTML = "1";
+       }
+       if(quantity === "10"){
+         document.getElementById('price').innerHTML = "10";
+       }
+       if(quantity === "25"){
+         document.getElementById('price').innerHTML = "25";
+       }
+       if(quantity === "50"){
+         document.getElementById('price').innerHTML = "50";
+       }
+       if(quantity === "100"){
+         document.getElementById('price').innerHTML = "100";
+       }
+       if(quantity === "200"){
+         document.getElementById('price').innerHTML = "200";
+       }
+     }
   </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!-- Optional JavaScript -->
