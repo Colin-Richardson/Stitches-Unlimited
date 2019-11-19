@@ -169,7 +169,7 @@
       element.setAttribute('src', 'img/cart1.png');
     }
      function addtocart(){
-     document.cookie += document.getElementById('item').innerHTML +  "<br>";
+     document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value + "<br>";
      document.getElementById('test').innerHTML = document.cookie;
     }
     function price(){
