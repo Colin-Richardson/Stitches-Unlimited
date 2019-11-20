@@ -11,6 +11,7 @@ function cartunhover(element) {
  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + quantity + "</td> <td>" + price + "</td> </tr>";
 // remove comment below to test cookie output
   document.getElementById('ordertable').innerHTML = document.cookie;
+    document.getElementById('test').innerHTML = document.cookie;
 }
 function price(){
    let quantity = document.getElementById('amount').value;
