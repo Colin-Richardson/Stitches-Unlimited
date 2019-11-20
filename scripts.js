@@ -1,4 +1,4 @@
- // document.cookie = "<tr><th>Item</th> <th>Amount</th> <th>Price</th> </tr>";
+  document.cookie = "<tr><th>Item</th> <th>Amount</th> <th>Price</th> </tr>";
 function carthover(element) {
   element.setAttribute('src', 'img/cart2.png');
 }
@@ -28,10 +28,9 @@ function price(){
    }
  }
  function addtocart(){
- // document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + quantity + "</td> <td>" + price + "</td> </tr>";
+  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + document.getElementById('amount').value + "</td> <td>" + price + "</td> </tr>";
  //document.cookie += document.getElementById('item').innerHTML + quantity + document.getElementById('price').innerHTML;
- document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value;
-// remove comment below to test cookie output
-//  document.getElementById('ordertable').innerHTML = document.cookie;
-  document.getElementById('test').innerHTML = document.cookie;
+ //document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value;
+  document.getElementById('ordertable').innerHTML = document.cookie;
+//  document.getElementById('test').innerHTML = document.cookie;
 }
