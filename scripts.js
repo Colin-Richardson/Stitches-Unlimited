@@ -1,3 +1,4 @@
+ document.cookie = "<tr><th>Item</th> <th>Amount</th> <th>Price</th> </tr>";
 function carthover(element) {
   element.setAttribute('src', 'img/cart2.png');
 }
@@ -6,8 +7,6 @@ function cartunhover(element) {
   element.setAttribute('src', 'img/cart1.png');
 }
  function addtocart(){
- document.cookie =
- "<tr><th>Item</th> <th>Amount</th> <th>Price</th> </tr>"
  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + quantity + "</td> <td>" + price + "</td> </tr>";
 // remove comment below to test cookie output
   document.getElementById('ordertable').innerHTML = document.cookie;
