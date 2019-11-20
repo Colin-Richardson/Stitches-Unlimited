@@ -7,7 +7,8 @@ function cartunhover(element) {
   element.setAttribute('src', 'img/cart1.png');
 }
  function addtocart(){
- document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + quantity + "</td> <td>" + price + "</td> </tr>";
+ // document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + quantity + "</td> <td>" + price + "</td> </tr>";
+ document.cookie += document.getElementById('item').innerHTML + quantity + price;
 // remove comment below to test cookie output
   document.getElementById('ordertable').innerHTML = document.cookie;
     document.getElementById('test').innerHTML = document.cookie;
