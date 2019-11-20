@@ -6,13 +6,6 @@ function carthover(element) {
 function cartunhover(element) {
   element.setAttribute('src', 'img/cart1.png');
 }
- function addtocart(){
- // document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + quantity + "</td> <td>" + price + "</td> </tr>";
- document.cookie += document.getElementById('item').innerHTML + quantity + price;
-// remove comment below to test cookie output
-  document.getElementById('ordertable').innerHTML = document.cookie;
-    document.getElementById('test').innerHTML = document.cookie;
-}
 function price(){
    let quantity = document.getElementById('amount').value;
    if(quantity === "1"){
@@ -34,3 +27,10 @@ function price(){
      document.getElementById('price').innerHTML = document.getElementById('price6').innerHTML;
    }
  }
+ function addtocart(){
+ // document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + quantity + "</td> <td>" + price + "</td> </tr>";
+ document.cookie += document.getElementById('item').innerHTML + quantity + document.getElementById('price').innerHTML;
+// remove comment below to test cookie output
+  document.getElementById('ordertable').innerHTML = document.cookie;
+    document.getElementById('test').innerHTML = document.cookie;
+}
