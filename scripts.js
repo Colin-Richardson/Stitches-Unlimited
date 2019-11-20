@@ -32,6 +32,6 @@ function price(){
  //document.cookie += document.getElementById('item').innerHTML + quantity + document.getElementById('price').innerHTML;
  document.cookie += document.getElementById('item').innerHTML + quantity;
 // remove comment below to test cookie output
-  document.getElementById('ordertable').innerHTML = document.cookie;
+//  document.getElementById('ordertable').innerHTML = document.cookie;
   document.getElementById('test').innerHTML = document.cookie;
 }
