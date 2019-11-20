@@ -34,4 +34,5 @@ function price(){
   document.getElementById('ordertable').innerHTML = document.cookie;
 //  document.getElementById('test').innerHTML = document.cookie;
 
+
 }
