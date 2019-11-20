@@ -1,4 +1,4 @@
- document.cookie = "<tr><th>Item</th> <th>Amount</th> <th>Price</th> </tr>";
+ // document.cookie = "<tr><th>Item</th> <th>Amount</th> <th>Price</th> </tr>";
 function carthover(element) {
   element.setAttribute('src', 'img/cart2.png');
 }
