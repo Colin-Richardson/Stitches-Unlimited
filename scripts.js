@@ -27,9 +27,17 @@ function price(){
    }
  }
  function addtocart(){
-  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + document.getElementById('amount').value + "</td> <td>" + document.getElementById('price').innerHTML + "</td> </tr>";
- //document.cookie += document.getElementById('item').innerHTML + quantity + document.getElementById('price').innerHTML;
- //document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value;
+  var table = document.getElementById("ordercart");
+  var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  cell1.innerHTML = document.getElementById('item').innerHTML;
+  cell2.innerHTML = document.getElementById('amount').value;
+  cell3.innerHTML =  document.getElementById('price').innerHTML;
+}
+//  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + document.getElementById('amount').value + "</td> <td>" + document.getElementById('price').innerHTML + "</td> </tr>";
+
   document.getElementById('ordertable').innerHTML = document.cookie;
   document.getElementById('test').innerHTML = document.cookie;
 }
