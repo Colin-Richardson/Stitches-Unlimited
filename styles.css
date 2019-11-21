@@ -216,13 +216,17 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
   margin-top: 0.50%;
 border: 3px rgba(161, 18, 18, 0.95) solid;
 }
+.contact-card {
+  width: 80%;
+  background-color: rgba(161, 18, 18, 0.8);
+}
 .map{
   border: 3px rgba(161, 18, 18, 0.95) solid;
-height: 100%;
-width: 90%;
+height: 90%;
+width: 80%;
 }
-.contact-info {
-  color: #a11212;
+.contact-text {
+  color: white;
 }
 .submit{
   background-color: #a11212;
@@ -564,14 +568,15 @@ display:         flex;
 }
 .about-body {
   color: #9c1313;
-  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .business {
   width: 100%;
   border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 .awardgroup {
-  margin-top: 7%;
+  margin-top: 10%;
 }
 .award {
   border: 2px rgba(161, 18, 18, 0.95) solid;
@@ -585,15 +590,17 @@ display:         flex;
   margin-right: auto;
 }
 #firstname{
-margin-right: 0.5%;
+margin-right: 50%;
 }
 #lastname{
-margin-left: 0.5%;
+margin-left: 50%;
 }
 #carouselExampleIndicators {
   border: 3px solid #a11212;
 }
-
+#email {
+  padding-right: 50%
+}
 #cart {
   position: absolute;
   right: 2%;
