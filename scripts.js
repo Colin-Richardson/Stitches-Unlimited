@@ -35,7 +35,7 @@ function price(){
 
 //document.cookie += document.createElement("tr"); + document.createElement("td"); + document.getElementById('item').innerHTML; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('amount').value; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('price').innerHTML; + document.body.appendChild(document.createElement("td")); + document.body.appendChild(document.createElement("tr"));
 //  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + document.getElementById('amount').value + "</td> <td>" + document.getElementById('price').innerHTML + "</td> </tr>";
-  document.cookie += document.getElementById('item').innerHTML.className = "table" + document.getElementById('amount').value.className = "table" + document.getElementById('price').innerHTML.className = "table";
+  document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount') + document.getElementById('price').innerHTML;
   document.getElementById('ordertable').innerHTML = document.cookie;
   document.getElementById('test').innerHTML = document.cookie;
 }
