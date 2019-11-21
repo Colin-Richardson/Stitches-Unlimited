@@ -28,7 +28,7 @@ function price(){
  }
  function addtocart(){
 
- document.cookie +=  document.getElementById('test').innerHTML += document.getElementById('item').innerHTML + document.getElementById('amount').value + document.getElementById('price').innerHTML + "<br>";
+ document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value + document.getElementById('price').innerHTML + "<br>";
   document.getElementById('ordertable').innerHTML = document.cookie;
 
 }
