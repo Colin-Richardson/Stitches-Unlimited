@@ -27,18 +27,12 @@ function price(){
    }
  }
  function addtocart(){
+var trStart = document.createElement("tr");
+var trEnd = document.body.appendChild(document.createElement("tr"));
+var tdStart = document.createElement("td");
+var tdEnd = document.body.appendChild(document.createElement("td"));
+document.cookie += trStart + tdStart + document.getElementById('item').innerHTML + tdEnd + tdStart + document.getElementById('amount').value; + tdEnd + tdStart + document.getElementById('price').innerHTML; + tdEnd + trEnd;
 
-document.cookie += document.createElement("tr");
-document.cookie += document.createElement("td");
-document.cookie += document.getElementById('item').innerHTML;
-document.cookie += document.body.appendChild(document.createElement("td"));
-document.cookie += document.createElement("td");
-document.cookie += document.getElementById('amount').value;
-document.cookie += document.body.appendChild(document.createElement("td"));
-document.cookie += document.createElement("td");
-document.cookie += document.getElementById('price').innerHTML;
-document.cookie += document.body.appendChild(document.createElement("td"));
-document.cookie += document.body.appendChild(document.createElement("tr"));
 //document.cookie += document.createElement("tr"); + document.createElement("td"); + document.getElementById('item').innerHTML; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('amount').value; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('price').innerHTML; + document.body.appendChild(document.createElement("td")); + document.body.appendChild(document.createElement("tr"));
 //  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + document.getElementById('amount').value + "</td> <td>" + document.getElementById('price').innerHTML + "</td> </tr>";
   document.getElementById('ordertable').innerHTML = test;
