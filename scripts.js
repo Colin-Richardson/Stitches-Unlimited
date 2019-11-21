@@ -39,5 +39,4 @@ function ordertable(){
   //  document.getElementById('ordertable').innerHTML = document.cookie;
 //document.getElementById('ordertable').innerHTML = document.createElement("tr") + document.createElement("td") + "document.getElementById('item').innerHTML" + document.body.appendChild(document.createElement("td")) + document.createElement("td") + "document.getElementById('amount').value" + document.body.appendChild(document.createElement("td"))  + document.createElement("td") + "document.getElementById('price').innerHTML" + document.body.appendChild(document.createElement("td"))  + document.body.appendChild(document.createElement("tr"));
 document.getElementById('ordertable').innerHTML = document.cookie;
-
 }
