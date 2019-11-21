@@ -30,7 +30,7 @@ function price(){
 
  document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value + document.getElementById('price').innerHTML + "<br>";
   document.getElementById('ordertable').innerHTML = document.cookie;
-
+// document.getElementById('test').innerHTML += document.getElementById('item').innerHTML + document.getElementById('amount').value + document.getElementById('price').innerHTML + "<br>";
 }
 function ordertable(){
 
