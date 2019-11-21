@@ -28,12 +28,25 @@ function price(){
  }
  function addtocart(){
 
-
-document.cookie += document.createElement("tr"); + document.createElement("td"); + document.getElementById('item').innerHTML; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('amount').value; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('price').innerHTML; + document.body.appendChild(document.createElement("td")); + document.body.appendChild(document.createElement("tr"));
+document.cookie += makerow();
+//document.cookie += document.createElement("tr"); + document.createElement("td"); + document.getElementById('item').innerHTML; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('amount').value; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('price').innerHTML; + document.body.appendChild(document.createElement("td")); + document.body.appendChild(document.createElement("tr"));
 //  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + document.getElementById('amount').value + "</td> <td>" + document.getElementById('price').innerHTML + "</td> </tr>";
 
   document.getElementById('ordertable').innerHTML = document.cookie;
   document.getElementById('test').innerHTML = document.cookie;
+}
+function makerow(){
+  document.createElement("tr");
+  document.createElement("td");
+  document.getElementById('item').innerHTML;
+  document.body.appendChild(document.createElement("td"));
+  document.createElement("td");
+  document.getElementById('amount').value;
+  document.body.appendChild(document.createElement("td"));
+  document.createElement("td");
+  document.getElementById('price').innerHTML;
+  document.body.appendChild(document.createElement("td"));
+  document.body.appendChild(document.createElement("tr"));
 }
 function ordertable(){
   //  document.getElementById('ordertable').innerHTML = document.cookie;
