@@ -1,4 +1,3 @@
-  document.cookie = ;
 function carthover(element) {
   element.setAttribute('src', 'img/cart2.png');
 }
@@ -32,6 +31,7 @@ function price(){
  //document.cookie += document.getElementById('item').innerHTML + quantity + document.getElementById('price').innerHTML;
  //document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value;
   document.getElementById('ordertable').innerHTML = document.cookie;
+  document.getElementById('test').innerHTML = document.cookie;
 }
 function ordertable(){
     document.getElementById('ordertable').innerHTML = document.cookie;
