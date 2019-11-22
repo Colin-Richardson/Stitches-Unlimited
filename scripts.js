@@ -39,6 +39,7 @@ var table = document.getElementById("test");
  cell2.innerHTML = document.getElementById('amount').value;
  cell3.innerHTML = document.getElementById('price').innerHTML;
  document.cookie += document.getElementById('test').innerHTML;
+}
 function ordertable(){
  //var table = document.getElementById("ordertable");
  //var row = table.insertRow(-1);
