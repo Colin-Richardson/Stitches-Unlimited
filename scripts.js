@@ -50,5 +50,4 @@ function ordertable(){
  //cell2.innerHTML = localStorage.getItem("amount");
  //cell3.innerHTML = localStorage.getItem("price");
 document.getElementById('ordertable') = document.cookie;
-
 }
