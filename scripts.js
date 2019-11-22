@@ -27,24 +27,26 @@ function price(){
    }
  }
  function addtocart(){
-
- //document.cookie += document.getElementById('item').innerHTML + document.getElementById('amount').value + document.getElementById('price').innerHTML + "<br>";
-//  document.getElementById('ordertable').innerHTML = document.cookie;
-// document.getElementById('test').innerHTML += document.getElementById('item').innerHTML + document.getElementById('amount').value + document.getElementById('price').innerHTML + "<br>";
-localStorage.setItem("item",  document.getElementById('item').innerHTML);
-localStorage.setItem("amount", document.getElementById('amount').value);
-localStorage.setItem("price",  document.getElementById('price').innerHTML);
-//document.getElementById('test').innerHTML = localStorage.getItem("item") + localStorage.getItem("amount") + localStorage.getItem("price");
-}
-function ordertable(){
-//document.getElementById('ordertable').innerHTML = localStorage.getItem("item") + localStorage.getItem("amount") + localStorage.getItem("price");
-var table = document.getElementById("ordertable");
+//localStorage.setItem("item",  document.getElementById('item').innerHTML);
+//localStorage.setItem("amount", document.getElementById('amount').value);
+//localStorage.setItem("price",  document.getElementById('price').innerHTML);
+var table = document.getElementById("test");
  var row = table.insertRow(-1);
  var cell1 = row.insertCell(0);
  var cell2 = row.insertCell(1);
  var cell3 = row.insertCell(2);
- cell1.innerHTML = localStorage.getItem("item");
- cell2.innerHTML = localStorage.getItem("amount");
- cell3.innerHTML = localStorage.getItem("price");
-
+ cell1.innerHTML = document.getElementById('item').innerHTML;
+ cell2.innerHTML = document.getElementById('amount').value;
+ cell3.innerHTML = document.getElementById('price').innerHTML;
+ document.cookie += document.getElementById('test').innerHTML;
+function ordertable(){
+ //var table = document.getElementById("ordertable");
+ //var row = table.insertRow(-1);
+ //var cell1 = row.insertCell(0);
+ //var cell2 = row.insertCell(1);
+ //var cell3 = row.insertCell(2);
+ //cell1.innerHTML = localStorage.getItem("item");
+ //cell2.innerHTML = localStorage.getItem("amount");
+ //cell3.innerHTML = localStorage.getItem("price");
+document.getElementById('ordertable') = document.cookie;
 }
