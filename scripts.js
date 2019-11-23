@@ -41,7 +41,8 @@ if(typeof(Storage) !== "undefined") {
     JSON.parse(sessionStorage.getItem('test'));
     array.push(document.getElementById('item').innerHTML);
     sessionStorage.test = JSON.stringify(array);
-  } else {
+  }
+else {
     var array = [document.getElementById('item').innerHTML];
      sessionStorage.test = JSON.stringify(array);
   }
