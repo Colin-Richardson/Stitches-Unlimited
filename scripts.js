@@ -27,31 +27,37 @@ function price(){
    }
  }
  function addtocart(){
-var trStart = document.createElement("tr");
-var trEnd = document.body.appendChild(trStart);
-var tdStart = document.createElement("td");
-var tdEnd = document.body.appendChild(tdStart);
-document.cookie += trStart + tdStart + document.getElementById('item').innerHTML + tdEnd + tdStart + document.getElementById('amount').value; + tdEnd + tdStart + document.getElementById('price').innerHTML; + tdEnd + trEnd;
-//document.cookie += document.createElement("tr"); + document.createElement("td"); + document.getElementById('item').innerHTML; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('amount').value; + document.body.appendChild(document.createElement("td")); + document.createElement("td"); + document.getElementById('price').innerHTML; + document.body.appendChild(document.createElement("td")); + document.body.appendChild(document.createElement("tr"));
-//  document.cookie += "<tr> <td>" + document.getElementById('item').innerHTML + "</td> <td>" + document.getElementById('amount').value + "</td> <td>" + document.getElementById('price').innerHTML + "</td> </tr>";
-  document.getElementById('ordertable').innerHTML = document.cookie;
-  document.getElementById('test').innerHTML = testvar;
+   //counts number of clicks
+   if(typeof(Storage) !== "undefined") {
+     if (localStorage.clickcount) {
+       localStorage.clickcount = Number(localStorage.clickcount)+1;
+     } else {
+       localStorage.clickcount = 1;
+     }
+   }
+   if(localStorage.getItem('clickcount') == 1) {
+   var item = [document.getElementById('item').innerHTML];
+   }
+else {
+    item.push("ds");
 }
-function makerow(){
-document.createElement("tr");
-document.createElement("td");
-document.getElementById('item').innerHTML
-document.body.appendChild(document.createElement("td"));
-document.getElementById('amount').value;
-document.createElement("td");
-document.body.appendChild(document.createElement("td"));
-document.createElement("td");
-document.getElementById('price').innerHTML;
-document.body.appendChild(document.createElement("td"));
-document.body.appendChild(document.createElement("tr"));
+   // stores item, price and amount
+//localStorage.setItem("item",  document.getElementById('item').innerHTML);
+//localStorage.setItem("amount", document.getElementById('amount').value);
+//localStorage.setItem("price",  document.getElementById('price').innerHTML);
+
+document.getElementById('test').innerHTML = item;
+
 }
 function ordertable(){
-  //  document.getElementById('ordertable').innerHTML = document.cookie;
-//document.getElementById('ordertable').innerHTML = document.createElement("tr") + document.createElement("td") + "document.getElementById('item').innerHTML" + document.body.appendChild(document.createElement("td")) + document.createElement("td") + "document.getElementById('amount').value" + document.body.appendChild(document.createElement("td"))  + document.createElement("td") + "document.getElementById('price').innerHTML" + document.body.appendChild(document.createElement("td"))  + document.body.appendChild(document.createElement("tr"));
-document.getElementById('ordertable').innerHTML = document.cookie;
+
+var table = document.getElementById("ordertable");
+var row = table.insertRow(-1);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+cell1.innerHTML = localStorage.getItem("item");
+cell2.innerHTML = localStorage.getItem("amount");
+cell3.innerHTML = localStorage.getItem("price");
+
 }
