@@ -35,18 +35,11 @@ function price(){
        localStorage.clickcount = 1;
      }
    }
-   if(localStorage.getItem('clickcount') == 1) {
-   var item = [document.getElementById('item').innerHTML];
-   }
-else {
-    item.push("ds");
-}
-   // stores item, price and amount
-//localStorage.setItem("item",  document.getElementById('item').innerHTML);
-//localStorage.setItem("amount", document.getElementById('amount').value);
-//localStorage.setItem("price",  document.getElementById('price').innerHTML);
 
-document.getElementById('test').innerHTML = item;
+   // stores item, price and amount
+localStorage.setItem("item",  document.getElementById('item').innerHTML);
+localStorage.setItem("amount", document.getElementById('amount').value);
+localStorage.setItem("price",  document.getElementById('price').innerHTML);
 
 }
 function ordertable(){
