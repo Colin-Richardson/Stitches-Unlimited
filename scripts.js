@@ -39,8 +39,8 @@ function price(){
 var array = [document.getElementById('item').innerHTML];
 if(document.cookie){
 array.push(document.cookie);
-document.cookie = JSON.stringify(array);
 }
+document.cookie = JSON.stringify(array);
    // stores item, price and amount
 sessionStorage.setItem("item", JSON.stringify(item));
 sessionStorage.setItem("amount", document.getElementById('amount').value);
