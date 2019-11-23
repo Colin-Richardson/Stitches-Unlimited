@@ -29,18 +29,28 @@ function price(){
  function addtocart(){
    //counts number of clicks
    if(typeof(Storage) !== "undefined") {
-     if (localStorage.clickcount) {
-       localStorage.clickcount = Number(localStorage.clickcount)+1;
+     if (sessionStorage.clickcount) {
+       sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
      } else {
-       localStorage.clickcount = 1;
+       sessionStorage.clickcount = 1;
      }
    }
 
+if(typeof(Storage) !== "undefined") {
+  if (sessionStorage.test) {
+    JSON.parse(sessionStorage.getItem('test'));
+    array.push(document.getElementById('item').innerHTML);
+    sessionStorage.test = JSON.stringify(array);
+  } else {
+    var array = [document.getElementById('item').innerHTML];
+     sessionStorage.test = JSON.stringify(array);
+  }
+}
    // stores item, price and amount
-localStorage.setItem("item", document.getElementById('item').innerHTML);
-localStorage.setItem("amount", document.getElementById('amount').value);
-localStorage.setItem("price",  document.getElementById('price').innerHTML);
-
+sessionStorage.setItem("item", JSON.stringify(item));
+sessionStorage.setItem("amount", document.getElementById('amount').value);
+sessionStorage.setItem("price",  document.getElementById('price').innerHTML);
+document.getElementById('test').innerHTML = sessionStorage.getItem('test');
 }
 function ordertable(){
 
@@ -49,8 +59,8 @@ var row = table.insertRow(-1);
 var cell1 = row.insertCell(0);
 var cell2 = row.insertCell(1);
 var cell3 = row.insertCell(2);
-cell1.innerHTML = localStorage.getItem("item");
-cell2.innerHTML = localStorage.getItem("amount");
-cell3.innerHTML = localStorage.getItem("price");
+cell1.innerHTML = JSON.parse(sessionStorage.getItem('item'));
+cell2.innerHTML = sessionStorage.getItem("amount");
+cell3.innerHTML = sessionStorage.getItem("price");
 
 }
