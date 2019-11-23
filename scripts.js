@@ -37,7 +37,7 @@ function price(){
    }
 
    // stores item, price and amount
-localStorage.setItem("item",  document.getElementById('item').innerHTML);
+localStorage.setItem("item", document.getElementById('item').innerHTML);
 localStorage.setItem("amount", document.getElementById('amount').value);
 localStorage.setItem("price",  document.getElementById('price').innerHTML);
 
