@@ -36,22 +36,16 @@ function price(){
      }
    }
 
-if(typeof(Storage) !== "undefined") {
-  if (sessionStorage.test) {
-    JSON.parse(sessionStorage.getItem('test'));
-    array.push(document.getElementById('item').innerHTML);
-    sessionStorage.test = JSON.stringify(array);
-  }
-else {
-    var array = [document.getElementById('item').innerHTML];
-     sessionStorage.test = JSON.stringify(array);
-  }
+var array = [document.getElementById('item').innerHTML];
+if(document.cookie){
+array.push(document.cookie);
+document.cookie = JSON.stringify(array);
 }
    // stores item, price and amount
 sessionStorage.setItem("item", JSON.stringify(item));
 sessionStorage.setItem("amount", document.getElementById('amount').value);
 sessionStorage.setItem("price",  document.getElementById('price').innerHTML);
-document.getElementById('test').innerHTML = sessionStorage.getItem('test');
+document.getElementById('test').innerHTML = document.cookie;
 }
 function ordertable(){
 
