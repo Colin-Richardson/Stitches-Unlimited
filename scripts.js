@@ -27,25 +27,37 @@ function price(){
    }
  }
  function addtocart(){
-//var clickcount;
-//clickcount++;
-localStorage.setItem("item",  document.getElementById('item').innerHTML);
-localStorage.setItem("amount", document.getElementById('amount').value);
-localStorage.setItem("price",  document.getElementById('price').innerHTML);
-//document.getElementById('test').innerHTML = clickcount;
+   //counts number of clicks
+   if(typeof(Storage) !== "undefined") {
+     if (localStorage.clickcount) {
+       localStorage.clickcount = Number(localStorage.clickcount)+1;
+     } else {
+       localStorage.clickcount = 1;
+     }
+   }
+   if(localStorage.getItem('clickcount') == 1) {
+   var item = [document.getElementById('item').innerHTML];
+   }
+else {
+    item.push("ds");
+}
+   // stores item, price and amount
+//localStorage.setItem("item",  document.getElementById('item').innerHTML);
+//localStorage.setItem("amount", document.getElementById('amount').value);
+//localStorage.setItem("price",  document.getElementById('price').innerHTML);
 
-var table = document.getElementById("test");
+document.getElementById('test').innerHTML = item;
+
+}
+function ordertable(){
+
+var table = document.getElementById("ordertable");
 var row = table.insertRow(-1);
 var cell1 = row.insertCell(0);
 var cell2 = row.insertCell(1);
 var cell3 = row.insertCell(2);
-cell1.innerHTML = document.getElementById('item').innerHTML;
-cell2.innerHTML = document.getElementById('amount').value;
-cell3.innerHTML = document.getElementById('price').innerHTML;
-
-document.cookie += document.getElementById("test").innerHTML;
-}
-function ordertable(){
-document.getElementById('ordertable').innerHTML;
+cell1.innerHTML = localStorage.getItem("item");
+cell2.innerHTML = localStorage.getItem("amount");
+cell3.innerHTML = localStorage.getItem("price");
 
 }
