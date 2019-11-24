@@ -88,11 +88,12 @@ cell4.setAttribute("class", "cell4")
 }
 function deleteRow(r) {
   var d = r.parentNode.parentNode.rowIndex;
+  var dd = d.toString();
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
-  sessionStorage.removeItem(itemString + d);
-  sessionStorage.removeItem(amountString + d);
-  sessionStorage.removeItem(priceString + d);
+  sessionStorage.removeItem(itemString + dd);
+  sessionStorage.removeItem(amountString + dd);
+  sessionStorage.removeItem(priceString + dd);
   document.getElementById("ordertable").deleteRow(d);
 }
