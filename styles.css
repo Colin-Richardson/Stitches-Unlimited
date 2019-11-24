@@ -607,3 +607,21 @@ display:         flex;
   font-size: 80px;
   color: white;
 }
+/* Order Page table */
+#ordertable th{
+  background-color: #a11212;
+  color: white;
+}
+#ordertable td{
+  background-color: white;
+    border: 3px solid #a11212;
+}
+.cell1{
+    width: 100%;
+}
+.cell2{
+    text-align: right;
+}
+.cell3{
+    text-align: right;
+}

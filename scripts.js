@@ -57,8 +57,8 @@ function ordertable(){
   var priceString = "price";
   var itemKey = localStorage.getItem('clickcount');
 
-for(i = 0; i < itemKey; i++){
-  var varselector = i + 1;
+for(i = 1; i < itemKey; i++){
+  var varselector = i;
   // Find a <table> element with id="myTable":
   var table = document.getElementById("ordertable");
 
@@ -74,8 +74,8 @@ cell2.setAttribute("class", "cell2");
 cell3.setAttribute("class", "cell3");
 
   // Add some text to the new cells:
-  cell1.innerHTML = localStorage.getItem(itemString + varselector);
-  cell2.innerHTML = localStorage.getItem(amountString + varselector);
-  cell3.innerHTML = localStorage.getItem(priceString + varselector);
+  cell1.innerHTML = localStorage.getItem(itemString + i);
+  cell2.innerHTML = localStorage.getItem(amountString + i);
+  cell3.innerHTML = localStorage.getItem(priceString + i);
 }
 }
