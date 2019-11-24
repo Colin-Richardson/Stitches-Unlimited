@@ -13,19 +13,19 @@ function price(){
      document.getElementById('price').innerHTML = document.getElementById('price1').innerHTML;
    }
    if(quantity === "10"){
-     document.getElementById('price').innerHTML = document.getElementById('price2').innerHTML;
+     document.getElementById('price').innerHTML = document.getElementById('price2').innerHTML * 10;
    }
    if(quantity === "25"){
-     document.getElementById('price').innerHTML = document.getElementById('price3').innerHTML;
+     document.getElementById('price').innerHTML = document.getElementById('price3').innerHTML * 25;
    }
    if(quantity === "50"){
-     document.getElementById('price').innerHTML = document.getElementById('price4').innerHTML;
+     document.getElementById('price').innerHTML = document.getElementById('price4').innerHTML * 50;
    }
    if(quantity === "100"){
-     document.getElementById('price').innerHTML = document.getElementById('price5').innerHTML;
+     document.getElementById('price').innerHTML = document.getElementById('price5').innerHTML * 100;
    }
    if(quantity === "200"){
-     document.getElementById('price').innerHTML = document.getElementById('price6').innerHTML;
+     document.getElementById('price').innerHTML = document.getElementById('price6').innerHTML * 200;
    }
  }
 //stores item data
