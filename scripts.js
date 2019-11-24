@@ -80,7 +80,7 @@ cell4.setAttribute("class", "cell4")
   cell1.innerHTML = sessionStorage.getItem(itemString + ii);
   cell2.innerHTML = sessionStorage.getItem(amountString + ii);
   cell3.innerHTML = sessionStorage.getItem(priceString + ii);
-  cell4.innerHTML = '<input type="button" value="Delete" onclick="deleteRow(this)">';
+  cell4.innerHTML = '<input type="button" value="x" class="deleteButton" onclick="deleteRow(this)">';
   //remove comment below if sessionStoragebreaks
   //sessionStorage.clear();
 }

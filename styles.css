@@ -626,3 +626,6 @@ display:         flex;
 .cell3{
     text-align: right;
 }
+.deleteButton{
+  background-color: #a11212;
+}
