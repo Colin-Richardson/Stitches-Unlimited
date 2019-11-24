@@ -626,12 +626,16 @@ display:         flex;
 .cell3{
     text-align: right;
 }
-.cell4{
-    background-color: #a11212;
+#ordertable td.cell4{
+background-color: #a11212;
 }
+
 .deleteButton{
   background-color: #a11212;
   color: white;
   border: none;
-    text-decoration: none;
+  text-decoration: none;
+}
+.deleteButton:hover{
+  color: grey;
 }
