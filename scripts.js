@@ -1,3 +1,4 @@
+//changes cart image when hovering
 function carthover(element) {
   element.setAttribute('src', 'img/cart2.png');
 }
@@ -5,6 +6,7 @@ function carthover(element) {
 function cartunhover(element) {
   element.setAttribute('src', 'img/cart1.png');
 }
+//sets the price shown in table
 function price(){
    let quantity = document.getElementById('amount').value;
    if(quantity === "1"){
@@ -26,7 +28,7 @@ function price(){
      document.getElementById('price').innerHTML = document.getElementById('price6').innerHTML;
    }
  }
-
+//stores item data
 function addtocart(){
   //counts number of clicks
   if(typeof(Storage) !== "undefined") {
@@ -36,46 +38,41 @@ function addtocart(){
       localStorage.clickcount = 1;
     }
   }
+//creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
   var itemKey = localStorage.getItem('clickcount')
+//generates itemKey with a number for every button press
 localStorage[itemString + itemKey] =  document.getElementById('item').innerHTML;
 localStorage[amountString + itemKey] =  document.getElementById('amount').value;
 localStorage[priceString + itemKey] =  document.getElementById('price').innerHTML;
-  // stores item, price and amount
-//localStorage.setItem("item", JSON.stringify(item));
-//localStorage.setItem("amount", document.getElementById('amount').value);
-//localStorage.setItem("price",  document.getElementById('price').innerHTML);
-
-document.getElementById('test').innerHTML = localStorage.getItem('item70');
 }
-
+//creates table based on stored item data
 function ordertable(){
+//creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
   var itemKey = localStorage.getItem('clickcount');
-
-for(i = 1; i < itemKey; i++){
-  var varselector = i;
-  // Find a <table> element with id="myTable":
+// loop that loops for each recorded button press(clickcount)
+for(i = 0; i < itemKey; i++){
+  var ii = i + 1;
+//selects table
   var table = document.getElementById("ordertable");
-
-  // Create an empty <tr> element and add it to the 1st position of the table:
-  var row = table.insertRow(i);
-
-  // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+//inserts a row(starting on row 1)
+  var row = table.insertRow(ii);
+//creates 3 cells for each row
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
   var cell3 = row.insertCell(2);
+// gives each cell a class
 cell1.setAttribute("class", "cell1");
 cell2.setAttribute("class", "cell2");
 cell3.setAttribute("class", "cell3");
-
-  // Add some text to the new cells:
-  cell1.innerHTML = localStorage.getItem(itemString + i);
-  cell2.innerHTML = localStorage.getItem(amountString + i);
-  cell3.innerHTML = localStorage.getItem(priceString + i);
+//names each cell
+  cell1.innerHTML = localStorage.getItem(itemString + ii);
+  cell2.innerHTML = localStorage.getItem(amountString + ii);
+  cell3.innerHTML = localStorage.getItem(priceString + ii);
 }
 }
