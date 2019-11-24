@@ -30,50 +30,51 @@ function price(){
 function addtocart(){
   //counts number of clicks
   if(typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
     } else {
-      localStorage.clickcount = 1;
+      sessionStorage.clickcount = 1;
     }
   }
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
-  var itemKey = localStorage.getItem('clickcount')
-localStorage[itemString + itemKey] =  document.getElementById('item').innerHTML;
-localStorage[amountString + itemKey] =  document.getElementById('amount').value;
-localStorage[priceString + itemKey] =  document.getElementById('price').innerHTML;
+  var itemKey = sessionStorage.getItem('clickcount')
+sessionStorage[itemString + itemKey] =  document.getElementById('item').innerHTML;
+sessionStorage[amountString + itemKey] =  document.getElementById('amount').value;
+sessionStorage[priceString + itemKey] =  document.getElementById('price').innerHTML;
   // stores item, price and amount
-//localStorage.setItem("item", JSON.stringify(item));
-//localStorage.setItem("amount", document.getElementById('amount').value);
-//localStorage.setItem("price",  document.getElementById('price').innerHTML);
-document.getElementById('test').innerHTML = localStorage.getItem('item70');
+//sessionStorage.setItem("item", JSON.stringify(item));
+//sessionStorage.setItem("amount", document.getElementById('amount').value);
+//sessionStorage.setItem("price",  document.getElementById('price').innerHTML);
+
+document.getElementById('test').innerHTML = sessionStorage.getItem('item70');
 }
 
 function ordertable(){
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
-  var itemKey = localStorage.getItem('clickcount');
+  var itemKey = sessionStorage.getItem('clickcount');
 
+for(i = 0; i < itemKey; i++){
+  // Find a <table> element with id="myTable":
+  var table = document.getElementById("ordertable");
 
-//creates a row
-  var row = document.createElement("TR");
-  row.setAttribute("id", "row");
-  document.getElementById("ordertable").appendChild(row);
-//creates first td and content
-  var td = document.createElement("TD");
-  var celltext = document.createTextNode(localStorage.getItem(itemString + itemKey));
-  td.appendChild(celltext);
-  document.getElementById("row").appendChild(td);
-//creates second td and content
-  var td2 = document.createElement("TD");
-  var celltext2 = document.createTextNode(localStorage.getItem(amountString + itemKey));
-  td2.appendChild(celltext2);
-  document.getElementById("row").appendChild(td2);
-//creates third td and content
-  var td3 = document.createElement("TD");
-  var celltext3 = document.createTextNode(localStorage.getItem(priceString + itemKey));
-  td3.appendChild(celltext3);
-  document.getElementById("row").appendChild(td3);
+  // Create an empty <tr> element and add it to the 1st position of the table:
+  var row = table.insertRow(i);
+
+  // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+cell1.setAttribute("class", "cell1");
+cell2.setAttribute("class", "cell2");
+cell3.setAttribute("class", "cell3");
+
+  // Add some text to the new cells:
+  cell1.innerHTML = sessionStorage.getItem(itemString + i);
+  cell2.innerHTML = sessionStorage.getItem(amountString + i);
+  cell3.innerHTML = sessionStorage.getItem(priceString + i);
+}
 }
