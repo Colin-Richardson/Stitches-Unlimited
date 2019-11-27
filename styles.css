@@ -19,9 +19,7 @@ footer {
   background-color: rgba(133, 18, 18, 0.9);
   color: white;
 }
-p {
- font-size: 1vw;
-}
+
 /* Navigation */
 .navbar-brand {
   margin-left: 0%;
@@ -112,9 +110,9 @@ margin-left: 1%;
 }
 /* Item of the day */
 .dayitem {
-  width: 57%;
+  width: 65%;
   /* 250px x 300px */
-  height: 24%;
+
   float: right;
   background-color: rgba(161, 18, 18, 1);
   text-align: center;
@@ -126,33 +124,17 @@ margin-left: 1%;
 }
 
 .dayitemimage {
-  width: 68%;
+  width: 67%;
   max-width: 100%;
   /* 250px x 300px */
-  height: 72%;
+  height: auto;
   border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 
 .dayitemcap {
   background-color: rgba(161, 18, 18, 0.95);
 }
-/* Satisfied Customer */
-.sampleleft {
-  height: 750px;
-  width: 200px;
-  margin-left: 10px;
-  border: 3px rgba(161, 18, 18, 0.95) solid;
-}
 
-.customer {
-  position: absolute;
-  top: 55%;
-  left: 10%;
-  color: white;
-  background-color: rgba(161, 18, 18, 0.85);
-  padding: 1.5%;
-  font-size: 20px;
-}
 /* Seasonal Products Title */
 .homeproducttitle {
   color: #a11212;
@@ -649,8 +631,19 @@ background-color: #a11212;
 .carousel-cell{
 width: 35%;
 }
+.card-title-index{
+  font-size: 12px;
+}
+}
+@media screen and (max-width:870px) {
+  .card-title-index{
+    font-size: 11px;
+  }
 }
 @media screen and (max-width:800px) {
+footer{
+  margin-top: 10%;
+}
 .carousel-cell{
 width: 45%;
 }
@@ -663,10 +656,19 @@ width: 45%;
 .nav-order{
   display: block;
 }
+.dayitem{
+  width: 75%;
+}
+.card-title-index{
+  font-size: 8px;
+}
 }
 @media screen and (max-width:767px) {
   .side-col{
     display: none;
+  }
+  .card-title-index{
+    font-size: 16px;
   }
 }
 @media screen and (max-width:450px) {
@@ -713,10 +715,19 @@ padding: 0;
 .jumbotron{
   padding-left: 25%;
 }
+.card-title-index{
+  font-size: 12px;
+}
+.footer-div{
+padding-left: 0;
+}
 }
 @media screen and (max-width:375px) {
   .jumbotron{
     padding-left: 20%;
+  }
+  .card-title-index{
+    font-size: 9px;
   }
 }
 @media screen and (max-width:320px) {
