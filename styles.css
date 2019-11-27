@@ -138,23 +138,21 @@ margin-left: 1%;
 }
 /* Satisfied Customer */
 .sampleleft {
-  height: 65%;
-  width: 45%;
+  height: 750px;
+  width: 200px;
   margin-left: 10px;
   border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 
 .customer {
   position: absolute;
-  top: 49%;
-  left: 7%;
+  top: 55%;
+  left: 10%;
   color: white;
   background-color: rgba(161, 18, 18, 0.85);
   padding: 1.5%;
-  font-size: 100%;
+  font-size: 20px;
 }
-
-
 /* Seasonal Products Title */
 .homeproducttitle {
   color: #a11212;
