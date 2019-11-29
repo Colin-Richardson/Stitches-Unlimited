@@ -202,16 +202,16 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
 width: 100%;
 }
 /* Contact Form Enter Area */
-#email{
+.contact #email{
   margin-top: 1%;
   margin-right: auto;
   width: 100%;
 }
-#firstname{
+.contact #firstname{
 width: 48%;
 float:left;
 }
-#lastname{
+.contact #lastname{
 width: 48%;
 float: right;
 }
@@ -617,7 +617,10 @@ display:         flex;
 #ordertable td.cell4{
 background-color: #a11212;
 }
-
+.order-cart{
+  text-align: center;
+  color: #a11212;
+}
 .deleteButton{
   background-color: #a11212;
   color: white;
@@ -626,6 +629,45 @@ background-color: #a11212;
 }
 .deleteButton:hover{
   color: grey;
+}
+/* order info input */
+.orderform{
+  text-align: center;
+}
+.orderinput{
+border: 3px rgba(161, 18, 18, 0.95) solid;
+}
+
+/* Order Form Enter Area */
+.orderform #email{
+  margin-top: 1%;
+  margin-right: auto;
+  width: 100%;
+}
+.formgroupleft{
+  float:left;
+  margin-left: 30%;
+}
+.formgroupright{
+  float: right;
+  margin-right: 30%;
+}
+.orderform #firstname, .orderform #lastname{
+width: 10%;
+
+}
+.orderform #lastname{
+  margin-left: 1%;
+}
+ #billing{
+  width: 21%;
+
+}
+ #billing2{
+  width: 21%;
+}
+#state{
+  width: 14.3%;
 }
 @media screen and (max-width:1024px) {
 .carousel-cell{
