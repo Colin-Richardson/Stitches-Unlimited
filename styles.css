@@ -471,9 +471,9 @@ background: white;
 }
 
 .product-header{
-  text-align: left;
+  text-align: center;
   color: #a11212;
-  margin-left: 10%;
+
 }
 .product-paragraph{
   text-align: left;
@@ -692,6 +692,9 @@ width: 35%;
     width: 175px;
   height: 200px;
 }
+.product-paragraph{
+  max-width: 100%;
+}
 }
 @media screen and (max-width:870px) {
   .card-title-index{
@@ -726,6 +729,10 @@ width: 45%;
 .card-title-index{
   font-size: 8px;
 }
+.product-footer{
+  margin-top: 0;
+}
+
 }
 @media screen and (max-width:767px) {
   .side-col{
@@ -734,6 +741,7 @@ width: 45%;
   .card-title-index{
     font-size: 16px;
   }
+
 }
 @media screen and (max-width:450px) {
 .carousel-cell{
@@ -830,5 +838,4 @@ padding-left: 0;
   .card-title-index{
     font-size: 6px;
   }
-
 }
