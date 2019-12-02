@@ -33,21 +33,21 @@ function price() {
 function addtocart() {
   //counts number of clicks
   if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount) + 1;
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
     } else {
-      localStorage.clickcount = 1;
+      sessionStorage.clickcount = 1;
     }
   }
   //creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
-  var itemKey = localStorage.getItem('clickcount')
+  var itemKey = sessionStorage.getItem('clickcount')
   //generates itemKey with a number for every button press
-  localStorage[itemString + itemKey] = document.getElementById('item').innerHTML;
-  localStorage[amountString + itemKey] = document.getElementById('amount').value;
-  localStorage[priceString + itemKey] = document.getElementById('price').innerHTML;
+  sessionStorage[itemString + itemKey] = document.getElementById('item').innerHTML;
+  sessionStorage[amountString + itemKey] = document.getElementById('amount').value;
+  sessionStorage[priceString + itemKey] = document.getElementById('price').innerHTML;
 
 }
 //creates table based on stored item data
@@ -57,11 +57,11 @@ function ordertable() {
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
-  var itemKey = localStorage.getItem('clickcount');
+  var itemKey = sessionStorage.getItem('clickcount');
   // loop that loops for each recorded button press(clickcount)
   for (i = 0; i < itemKey; i++) {
     var ii = i + 1;
-    if (localStorage.getItem(itemString + ii) !== null) {
+    if (sessionStorage.getItem(itemString + ii) !== null) {
       //selects table
       var table = document.getElementById("ordertable");
       //inserts a row(starting on row 1)
@@ -77,12 +77,12 @@ function ordertable() {
       cell3.setAttribute("class", "cell3");
       cell4.setAttribute("class", "cell4")
       //names each cell
-      cell1.innerHTML = localStorage.getItem(itemString + ii);
-      cell2.innerHTML = localStorage.getItem(amountString + ii);
-      cell3.innerHTML = localStorage.getItem(priceString + ii);
+      cell1.innerHTML = sessionStorage.getItem(itemString + ii);
+      cell2.innerHTML = sessionStorage.getItem(amountString + ii);
+      cell3.innerHTML = sessionStorage.getItem(priceString + ii);
       cell4.innerHTML = '<input type="button" value="x" class="deleteButton" onclick="deleteRow(this)">';
-      //remove comment below if localStoragebreaks
-      //localStorage.clear();
+      //remove comment below if sessionStoragebreaks
+      //sessionStorage.clear();
     }
   }
 }
@@ -92,8 +92,8 @@ function deleteRow(r) {
   var itemString = "item";
   var amountString = "amount";
   var priceString = "price";
-  localStorage.removeItem(itemString + d);
-  localStorage.removeItem(amountString + d);
-  localStorage.removeItem(priceString + d);
+  sessionStorage.removeItem(itemString + d);
+  sessionStorage.removeItem(amountString + d);
+  sessionStorage.removeItem(priceString + d);
   document.getElementById("ordertable").deleteRow(d);
 }

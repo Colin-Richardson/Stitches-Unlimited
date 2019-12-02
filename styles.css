@@ -695,6 +695,9 @@ width: 35%;
 .product-paragraph{
   max-width: 100%;
 }
+.addtocart{
+  margin-right: 55%;
+}
 }
 @media screen and (max-width:870px) {
   .card-title-index{
@@ -732,7 +735,9 @@ width: 45%;
 .product-footer{
   margin-top: 0;
 }
-
+.product-table{
+  margin-left: 7%;
+}
 }
 @media screen and (max-width:767px) {
   .side-col{
@@ -790,6 +795,9 @@ padding: 0;
 .footer-div{
 padding-left: 0;
 }
+.product-table{
+  margin-left: 6%;
+}
 }
 @media screen and (max-width:375px) {
   .jumbotron{
@@ -814,6 +822,9 @@ padding-left: 0;
     bottom: 0%;
     left: 4%;
   }
+  .product-table{
+    margin-left: 2%;
+  }
 }
 @media screen and (max-width:320px) {
   .jumbotron{
@@ -837,5 +848,8 @@ padding-left: 0;
   }
   .card-title-index{
     font-size: 6px;
+  }
+  .product-table{
+    margin-left: 0;
   }
 }
