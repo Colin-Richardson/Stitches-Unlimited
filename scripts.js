@@ -97,3 +97,8 @@ function deleteRow(r) {
   sessionStorage.removeItem(priceString + d);
   document.getElementById("ordertable").deleteRow(d);
 }
+function product(){
+if (location.hash === '#goldenshovel'){
+
+}
+}
