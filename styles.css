@@ -444,6 +444,7 @@ animation-duration: 1s;
   color: #9c1313;
   padding-left: 2%;
   padding-right: 2%;
+  font-size: 125%;
 }
 /* Business img on right column */
 .business {
@@ -698,6 +699,12 @@ width: 35%;
 .addtocart{
   margin-right: 55%;
 }
+.about-body {
+  font-size: 80%;
+}
+.about {
+  font-size: 200%
+}
 }
 @media screen and (max-width:870px) {
   .card-title-index{
@@ -711,6 +718,12 @@ width: 35%;
   .dayitemimage {
       width: 150px;
     height: 175px;
+  }
+  .about-body {
+    font-size: 65%;
+  }
+  .about {
+    font-size: 110%
   }
 }
 @media screen and (max-width:800px) {
@@ -738,6 +751,12 @@ width: 45%;
 .product-table{
   margin-left: 7%;
 }
+.about-body {
+  font-size: 60%;
+}
+.about {
+  font-size: 100%
+}
 }
 @media screen and (max-width:767px) {
   .side-col{
@@ -747,6 +766,17 @@ width: 45%;
     font-size: 16px;
   }
 
+}
+@media screen and (max-width:575px) {
+  .business {
+    margin-top: 10%;
+  }
+  .about-body {
+    font-size: 100%;
+  }
+  .about {
+    font-size: 200%;
+  }
 }
 @media screen and (max-width:450px) {
 .carousel-cell{
@@ -798,6 +828,12 @@ padding-left: 0;
 .product-table{
   margin-left: 6%;
 }
+.about-body {
+  font-size: 80%;
+}
+.about {
+  font-size: 175%;
+}
 }
 @media screen and (max-width:375px) {
   .jumbotron{
@@ -825,6 +861,12 @@ padding-left: 0;
   .product-table{
     margin-left: 2%;
   }
+  .about-body {
+    font-size: 70%;
+  }
+  .about {
+    font-size: 150%;
+  }
 }
 @media screen and (max-width:320px) {
   .jumbotron{
@@ -851,5 +893,11 @@ padding-left: 0;
   }
   .product-table{
     margin-left: 0;
+  }
+  .about-body {
+    font-size: 60%;
+  }
+  .about {
+    font-size: 125%;
   }
 }
