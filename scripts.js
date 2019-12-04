@@ -61,7 +61,6 @@ function ordertable() {
   // loop that loops for each recorded button press(clickcount)
   for (i = 0; i < itemKey; i++) {
     var ii = i + 1;
-    if (sessionStorage.getItem(itemString + ii) !== null) {
       //selects table
       var table = document.getElementById("ordertable");
       //inserts a row(starting on row 1)
@@ -70,35 +69,25 @@ function ordertable() {
       var cell1 = row.insertCell(0);
       var cell2 = row.insertCell(1);
       var cell3 = row.insertCell(2);
-      var cell4 = row.insertCell(3);
       // gives each cell a class
       cell1.setAttribute("class", "cell1");
       cell2.setAttribute("class", "cell2");
       cell3.setAttribute("class", "cell3");
-      cell4.setAttribute("class", "cell4")
       //names each cell
       cell1.innerHTML = sessionStorage.getItem(itemString + ii);
       cell2.innerHTML = sessionStorage.getItem(amountString + ii);
       cell3.innerHTML = sessionStorage.getItem(priceString + ii);
-      cell4.innerHTML = '<input type="button" value="x" class="deleteButton" onclick="deleteRow(this)">';
       //remove comment below if sessionStoragebreaks
       //sessionStorage.clear();
-    }
   }
 }
-
-function deleteRow(r) {
-  var d = r.parentNode.parentNode.rowIndex;
-  var itemString = "item";
-  var amountString = "amount";
-  var priceString = "price";
-  sessionStorage.removeItem(itemString + d);
-  sessionStorage.removeItem(amountString + d);
-  sessionStorage.removeItem(priceString + d);
-  document.getElementById("ordertable").deleteRow(d);
+function clearcart(){
+sessionStorage.clear();
+location.reload();
 }
 function product(){
 if (location.hash === '#goldenshovel'){
 
 }
 }
+
