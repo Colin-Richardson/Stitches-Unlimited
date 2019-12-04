@@ -85,9 +85,11 @@ function clearcart(){
 sessionStorage.clear();
 location.reload();
 }
+
 function product(){
 if (location.hash === '#goldenshovel'){
- document.getElementById("productimg").setAttribute('src', 'img/cuttingboard.png');
- 
+ document.getElementById("productimg").setAttribute('src', 'img/goldshovel.png');
+ document.getElementById("item").innerHTML = "Goldenshovel";
+ document.getElementById("description").innerHTML = "";
 }
 }
