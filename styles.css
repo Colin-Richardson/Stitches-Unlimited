@@ -621,14 +621,15 @@ background-color: #a11212;
   text-align: center;
   color: #a11212;
 }
-.deleteButton{
+.clearcart{
   background-color: #a11212;
-  color: white;
   border: none;
-  text-decoration: none;
+  color: white;
+  padding: 15px 128px;
+  cursor: pointer;
 }
-.deleteButton:hover{
-  color: grey;
+.clearcart:hover{
+    background-color: #6e0c0c;
 }
 /* order info input */
 .orderform{
@@ -645,6 +646,10 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 #expirationyear, #expirationmonth{
     margin-left: 1%;
+}
+ #cvv{
+    width: 3%;
+      margin-left: 1%;
 }
 /* Order Form Enter Area */
 .orderform #email{
@@ -676,6 +681,11 @@ width: 10%;
 }
 #state{
   width: 14.3%;
+}
+.orderheader{
+  color: #a11212;
+  margin-left: 30%;
+  float: left;
 }
 @media screen and (max-width:1024px) {
 .carousel-cell{

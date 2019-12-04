@@ -52,7 +52,12 @@ function addtocart() {
 }
 //creates table based on stored item data
 function ordertable() {
-
+var clear = document.getElementById('clearcart');
+if(sessionStorage.getItem('item1') == null){
+  clear.style.display = "none";
+} else {
+  clear.style.display = "block";
+}
   //creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
@@ -105,7 +110,7 @@ if (location.hash === '#fidgetspinner'){
 if (location.hash === '#replicabuic'){
  document.getElementById("productimg").setAttribute('src', 'img/replicabuic.png');
  document.getElementById("item").innerHTML = "Replica Buic";
- document.getElementById("description").innerHTML = "Slap band ruler bracelet made of eco-friendly silicone. Can be used as both a ruler and worn as a bracelet. Different sizes and colors available. Ideal for schools, office, company and etc.";
+ document.getElementById("description").innerHTML = "It's a blast from the past with this 1/18 scaled replica of the 1953 Buick Skylark! Measuring 9' x 4.5' x 3', our highly detailed die cast precision model features full functioning doors, hood and steering wheel, as well as a detailed chassis with separate exhaust system. Makes a great gift for any car enthusiast or model collectors! Customize with a one-color imprint on both doors and use to promote businesses within the automotive industry.";
 }
 if (location.hash === '#slapbracelet'){
  document.getElementById("productimg").setAttribute('src', 'img/slapbracelet.png');
@@ -158,6 +163,11 @@ if (location.hash === '#Chair'){
  document.getElementById("description").innerHTML = "With an extra sturdy steel frame and durable 600D fabric this chair has a loading weight limit of 400lbs. Features a unique and comfortable rounded ‘moon’ design with padded construction and a front tech pocket. Includes a study 600D carrying bag.";
 }
 }
+//if (location.hash === '#  '){
+// document.getElementById("productimg").setAttribute('src', 'img/  ');
+// document.getElementById("item").innerHTML = "   ";
+// document.getElementById("description").innerHTML = "  ";
+//}
 function reload1(){
   document.location.href = 'tempproduct.html#petbowl';
   location.reload();

@@ -60,10 +60,11 @@
     <th class="cell3">Price</th>
   </tr>
   </table>
-  <input type="submit" class="clearcart" value="Clear" onclick="clearcart()">
+  <input type="submit" id="clearcart" class="clearcart" value="Clear" onclick="clearcart()">
 </div>
 <div class="col-8">
     <form class="orderform" action="#" method="post" enctype="text/plain">
+      <h5 class= "orderheader">Payment Information</h5> <br><br>
 <select class="orderinput paymentinfo" name="" id ="paymentmethod">
   <option value="empty">----</option>
   <option value="Visa">Visa</option>
@@ -72,7 +73,7 @@
   <option value="Discover">Discover</option>
   <option value="JCB">JCB</option>
 </select> <br><br>
-<input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber">
+<input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber" required>
 <select class="orderinput paymentinfo" name="" id ="expirationmonth">
   <option value="empty">--</option>
   <option>1</option>
@@ -116,7 +117,10 @@
   <option>2042</option>
   <option>2043</option>
   <option>2044</option>
-</select> <br><br>
+</select>
+<input type="text" class="orderinput paymentinfo" placeholder="cvv" id="cvv" maxlength="3" required>
+ <br><br>
+  <h5 class= "orderheader">Other Information</h5><br><br>
       <input class="orderinput formgroupleft" id="firstname"type="text" placeholder="First Name" value="" required>
       <input class="orderinput formgroupleft" id="lastname" type="text" placeholder="Last Name" value="" required>
       <input class="orderinput formgroupright" id="city"type="text" placeholder="City" value="" required><br><br>
@@ -177,7 +181,7 @@
 </select>   <br><br>
       <input class="orderinput formgroupleft" id="billing2" type="text" placeholder="Billing Address, line 2" value="" >
       <input class="orderinput formgroupright" id="zipcode"type="text" placeholder="Zip/Postal Code" value="" required> <br><br>
-      <input type="submit" class="submit" value="order">
+      <input type="submit" class="submit" value="Order">
 
     </form>
 </div>
