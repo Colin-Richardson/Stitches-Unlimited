@@ -87,7 +87,7 @@ location.reload();
 }
 function product(){
 if (location.hash === '#goldenshovel'){
-
+ document.getElementById("productimg").setAttribute('src', 'img/cuttingboard.png');
+ 
 }
 }
-
