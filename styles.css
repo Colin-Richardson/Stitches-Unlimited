@@ -238,9 +238,8 @@ margin-top: 3%;
   background-color: #a11212;
   border: none;
   color: white;
-  padding: 15px 197px;
+  padding: 4% 46%;
   cursor: pointer;
-  transition: border-radius 1s;
 }
 .submit:hover{
   background-color: #6e0c0c;
@@ -752,10 +751,14 @@ width: 34%;
 .paymentinfogroup{
   margin-left: 4%;
 }
+
 }
 @media screen and (max-width:989px) {
 .nav-order{
   display: block;
+}
+.contact {
+  margin-left: 3%;
 }
 }
 @media screen and (max-width:870px) {
@@ -810,7 +813,7 @@ width: 45%;
   font-size: 100%
 }
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:769px) {
   .side-col{
     display: none;
   }
@@ -819,6 +822,16 @@ width: 45%;
   }
   .paymentinfogroup{
     margin-left: 3%;
+  }
+  .contact {
+    margin: 0% 1% 0% 1%;
+  }
+  .concards {
+    padding-top: 5%;
+    padding-right: 10%;
+  }
+  .submit {
+    padding: 4% 45%;
   }
 }
 @media screen and (max-width:575px) {
@@ -904,7 +917,6 @@ padding-left: 0;
 .about {
   font-size: 175%;
 }
-
 }
 @media screen and (max-width:375px) {
   .jumbotron{
