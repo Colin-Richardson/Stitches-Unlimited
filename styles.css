@@ -621,6 +621,12 @@ background-color: #a11212;
   text-align: center;
   color: #a11212;
 }
+.order-cart-desktop{
+  display: block;
+}
+.order-cart-mobile{
+display: none;
+}
 .showcart{
   display: none;
 }
@@ -633,6 +639,16 @@ background-color: #a11212;
 }
 .clearcart:hover{
     background-color: #6e0c0c;
+}
+.submitorder{
+  background-color: #a11212;
+  border: none;
+  color: white;
+  padding: 1% 18%;
+  cursor: pointer;
+}
+.submitorder:hover{
+  background-color: #6e0c0c;
 }
 /* order info input */
 .orderform{
@@ -846,6 +862,12 @@ width: 45%;
   }
 .order-cart{
 text-align: left;
+}
+.order-cart-desktop{
+  display: none;
+}
+.order-cart-mobile{
+display: block;
 }
 .showcart{
 width: 8%;
