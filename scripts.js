@@ -162,12 +162,52 @@ if (location.hash === '#Chair'){
  document.getElementById("item").innerHTML = "Collapsible Bucket";
  document.getElementById("description").innerHTML = "With an extra sturdy steel frame and durable 600D fabric this chair has a loading weight limit of 400lbs. Features a unique and comfortable rounded ‘moon’ design with padded construction and a front tech pocket. Includes a study 600D carrying bag.";
 }
+if (location.hash === '#mug'){
+ document.getElementById("productimg").setAttribute('src', 'img/mugs.jpg');
+ document.getElementById("item").innerHTML = "Mug";
+ document.getElementById("description").innerHTML = "You'll always show you're ‘resource’-ful with the 11 oz. budget mug! Made of ironstone ceramic, this appealing mug features a glossy exterior/interior and a large C-handle. With an overall size of 3 1/8’ diameter x 3 3/4’ h, this giveaway reaches its 11 oz. capacity when filled to the rim. It's a perfect canvas for your company's logo or message. Take advantage of its daily exposure by ordering yours now!";
 }
-//if (location.hash === '#  '){
-// document.getElementById("productimg").setAttribute('src', 'img/  ');
-// document.getElementById("item").innerHTML = "   ";
-// document.getElementById("description").innerHTML = "  ";
-//}
+if (location.hash === '#patches'){
+ document.getElementById("productimg").setAttribute('src', 'img/patch.jpg');
+ document.getElementById("item").innerHTML = "Patches";
+ document.getElementById("description").innerHTML = "Show your appreciation for a job well-done with these woven patches. Featuring a slightly different look than embroidered patches, these have a complex two dimensional look and 100% tight woven thread that perfectly display fine details, gradients, landscapes and very small lettering. Requiring 10-12 days after proof approval for creation, these customizable patches come with free ground shipping in the continental US.";
+}
+if (location.hash === '#Mugwarmer'){
+ document.getElementById("productimg").setAttribute('src', 'img/mugwarmer.jpg');
+ document.getElementById("item").innerHTML = "Mug Warmer";
+ document.getElementById("description").innerHTML = "This mug warmer works by USB, does not require a battery, it can keep the temperature of coffee/tea/drink at around 40 degree. It is easy to install, small size, light weight and easy to carry, suitable for home and office.";
+}
+if (location.hash === '#teaitems'){
+ document.getElementById("productimg").setAttribute('src', 'img/tea.jpg');
+ document.getElementById("item").innerHTML = "Tea Items";
+ document.getElementById("description").innerHTML = "Tea time just got better! Leave your old tea gadgets behind and make room for this 2’ x 1’ x 1’ leaf-shaped silicone tea filter and infuser. The eco-friendly accessory can be used in a tea cup or a coffee mug. It's designed with a stainless steel filter as well as a BPA-free silicone handle that protect you from heating up or burning your fingers from the hot water. Add your company name, logo, or emblem to this item to really heat up your promotional campaign!";
+}
+if (location.hash === '#shovels'){
+ document.getElementById("productimg").setAttribute('src', 'img/wintershovel.jpg');
+ document.getElementById("item").innerHTML = "Shovels";
+ document.getElementById("description").innerHTML = "Extendable snow scrub, useful for clean the snow and ice on the car. It has aluminum alloy rod, ABS shovel and PVC brush. It can be stretched from 24.25’ to 33’. The brush length is 7.87’. You could imprint your logo on the shovel. 24 1/2 ‘ x 4 7/10’";
+}
+if (location.hash === '#airpods'){
+ document.getElementById("productimg").setAttribute('src', 'img/airpod.jpg');
+ document.getElementById("item").innerHTML = "Airpods";
+ document.getElementById("description").innerHTML = "Let your music surround you all day with our best sounding earbuds that include a charging box that can recharge your earbuds in wirelessly and on the go! Pair any Bluetooth-enabled device with Cosy Bluetooth 5.0 earbuds for hours of smooth, high quality stereo sound to listening to music or talking on the phone. Smart touch control, easy pair up, and automatically turn on and connect your smart phone when removed from the case, automatically turn off when return to the case to charging. The earbuds will play music for about 3 hours, and the box will hold enough charge to re-charge the earbuds 2-3 more times without been recharge! The charging case is small enough to fit in your pocket, optional translucent silicone cover available with charge. Standard package in a white tuck box.";
+}
+if (location.hash === '#sunglasses'){
+ document.getElementById("productimg").setAttribute('src', 'img/carousel1.jpg');
+ document.getElementById("item").innerHTML = "Branded Sunglasses";
+ document.getElementById("description").innerHTML = "Change you customers' prospective on your brand by handing out these color-changing LensTek sunglasses at the next summertime-themed event! Made of polypropylene, these trendy shades change colors when hit with UV rays. The lenses provide 100% UVA and UVB protection and can be decorated with your company's imprinted decal for maximum brand exposure. The lenses feature small holes so the wearer can see through the imprint.";
+}
+if (location.hash === '#thulebackpack'){
+ document.getElementById("productimg").setAttribute('src', 'img/carousel2.jpg');
+ document.getElementById("item").innerHTML = "THULE Backpack";
+ document.getElementById("description").innerHTML = "Tackle your work week or weekend adventures in this durable laptop backpack with dedicated electronics protection, roomy compartments and organization. Padded, zippered compartment with dedicated storage for 15’ MacBook Pro®/up to 17’ PC, an iPad®/10.1’ tablet and a slip pocket for files. Crushproof SafeZone compartment for sunglasses and fragile gear includes a dedicated phone pocket. SafeZone compartment can be locked or removed altogether for extra space. The Shove-it Pocket with compression straps on the front provides additional external storage for a jacket or newspaper. Perforated EVA shoulder straps with mesh covering and padded back panel with air flow channels provide comfort and breathability. Water-resistant fabrics and zippers combine to create a lightweight, protective bag...";
+}
+if (location.hash === '#plainblacktee'){
+ document.getElementById("productimg").setAttribute('src', 'img/carousel3.jpg');
+ document.getElementById("item").innerHTML = "Plain Black Tee";
+ document.getElementById("description").innerHTML = "The cooling and breathable technology of Webtech in the Parima Long Sleeve Tech Tee will let you beat the heat during all your outdoor activities. Its added Caretech properties allow for ease of care, and it is engineered with a snag resist fabric, wicking finish and UV protection. You're set for any outdoor activity wearing the Parima in any of its six must-have colors.";
+}
+}
 function reload1(){
   document.location.href = 'tempproduct.html#petbowl';
   location.reload();
