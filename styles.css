@@ -45,6 +45,7 @@ margin-left: 1%;
 
 .activenav {
   border-bottom: 2px solid #a11212;
+
 }
 
 .navbar-toggler-icon {
@@ -683,7 +684,6 @@ width: 60%;
 #state{
   width: 60%;
 }
-
 .orderheader{
   color: #a11212;
   margin-left: 30%;
@@ -723,6 +723,40 @@ width: 35%;
 .about {
   font-size: 200%
 }
+.formgroupright{
+  width: 60%;
+  float: left;
+}
+.orderform #firstname, .orderform #lastname{
+width: 45%;
+}
+.orderform #lastname{
+  margin-left: 2%;
+}
+ #billing{
+width: 92%;
+
+}
+ #billing2{
+width: 92%;
+}
+#state{
+  width: 60%;
+}
+#paymentmethod, #cardnumber {
+width: 34%;
+}
+ #cvv{
+    width: 10%;
+}
+.paymentinfogroup{
+  margin-left: 4%;
+}
+}
+@media screen and (max-width:989px) {
+.nav-order{
+  display: block;
+}
 }
 @media screen and (max-width:870px) {
   .card-title-index{
@@ -754,11 +788,11 @@ width: 45%;
 .activenav {
   border-bottom: 0px;
 }
+#activenav{
+    color:  #6e0c0c;
+}
 .nav-item{
   text-align: left;
-}
-.nav-order{
-  display: block;
 }
 .card-title-index{
   font-size: 8px;
@@ -783,7 +817,9 @@ width: 45%;
   .card-title-index{
     font-size: 16px;
   }
-
+  .paymentinfogroup{
+    margin-left: 3%;
+  }
 }
 @media screen and (max-width:575px) {
   .business {
@@ -823,7 +859,6 @@ width: 100%;
   height: 150px;
   width: 350px;
   max-width: 400px;
-
 }
 .catalogue-cap-alt{
   bottom: 3%;
@@ -869,6 +904,7 @@ padding-left: 0;
 .about {
   font-size: 175%;
 }
+
 }
 @media screen and (max-width:375px) {
   .jumbotron{

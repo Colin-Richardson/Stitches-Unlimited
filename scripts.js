@@ -54,9 +54,9 @@ function addtocart() {
 function ordertable() {
 var clear = document.getElementById('clearcart');
 if(sessionStorage.getItem('item1') == null){
-  clear.style.display = "none";
+  clear.style.visibility = "hidden";
 } else {
-  clear.style.display = "block";
+  clear.style.visibility = "visible";
 }
   //creates vars needed for function
   var itemString = "item";
