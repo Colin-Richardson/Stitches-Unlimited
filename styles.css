@@ -621,6 +621,9 @@ background-color: #a11212;
   text-align: center;
   color: #a11212;
 }
+.showcart{
+  display: none;
+}
 .clearcart{
   background-color: #a11212;
   border: none;
@@ -640,16 +643,16 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
 }
 .paymentinfo{
   float:left;
+  margin-right: 1%;
+}
+.paymentinfogroup{
+  margin-left: 19%;
 }
 #paymentmethod, #cardnumber {
-  margin-left: 30%;
-}
-#expirationyear, #expirationmonth{
-    margin-left: 1%;
+width: 20%;
 }
  #cvv{
-    width: 3%;
-      margin-left: 1%;
+    width: 7%;
 }
 /* Order Form Enter Area */
 .orderform #email{
@@ -658,34 +661,39 @@ border: 3px rgba(161, 18, 18, 0.95) solid;
   width: 100%;
 }
 .formgroupleft{
-  float:left;
-  margin-left: 30%;
+  float: right;
 }
 .formgroupright{
-  float: right;
-  margin-right: 30%;
+  width: 60%;
+  float: left;
 }
 .orderform #firstname, .orderform #lastname{
-width: 10%;
-
+width: 29%;
 }
 .orderform #lastname{
-  margin-left: 1%;
+  margin-left: 2%;
 }
  #billing{
-  width: 21%;
+width: 60%;
 
 }
  #billing2{
-  width: 21%;
+width: 60%;
 }
 #state{
-  width: 14.3%;
+  width: 60%;
 }
+
 .orderheader{
   color: #a11212;
   margin-left: 30%;
   float: left;
+}
+.rotate{
+  transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
 }
 @media screen and (max-width:1024px) {
 .carousel-cell{
@@ -787,6 +795,23 @@ width: 45%;
   .about {
     font-size: 200%;
   }
+.order-cart{
+text-align: left;
+}
+.showcart{
+width: 8%;
+display: inline;
+transition: transform 0.5s;
+-webkit-transition: transform 0.5s;
+-moz-transition: transform 0.5s;
+-ms-transition: transform 0.5s;
+}
+#ordertable{
+  display: none;
+}
+#clearcart{
+  display:none;
+}
 }
 @media screen and (max-width:450px) {
 .carousel-cell{

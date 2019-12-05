@@ -6,11 +6,11 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Flickity CSS-->
+  <!-- Flickity CSS-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<!-- Base Stylesheet -->
+  <!-- Base Stylesheet -->
   <link rel="stylesheet" href="styles.css">
   <!-- Icon -->
   <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
@@ -19,175 +19,199 @@
 </head>
 
 <body onload="ordertable()">
-<div> <!--start of nav and jumbotron -->
-  <!-- start of navbar -->
-  <nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand" href="index.html"><img class="logo" src="img/logoalt.jpg" alt="StitchesTN"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarcollapse">
+  <div>
+    <!--start of nav and jumbotron -->
+    <!-- start of navbar -->
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="img/logoalt.jpg" alt="StitchesTN"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
 
-      <div class="navbar-nav">
-        <a class="nav-item nav-link " href="index.html">Home </a>
-        <a class="nav-item nav-link" href="catalogue.html">Catalogue</a>
-        <a class="nav-item nav-link" href="about.html">About</a>
-        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link " href="index.html">Home </a>
+          <a class="nav-item nav-link" href="catalogue.html">Catalogue</a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
           <a class="nav-item nav-link nav-order" href="order.html">Order</a>
-      </div>
+        </div>
 
+      </div>
+      <div class="collapse navbar-collapse" id="cart">
+        <a class="navbar-brand" href="order.html">
+          <img src="img/cart1.png" width="30" height="30" onmouseover="carthover(this);" onmouseout="cartunhover(this);">
+        </a>
+      </div>
+    </nav>
+    <!-- end of NavBar -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Order</h1>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="cart">
-      <a class="navbar-brand" href="order.html">
-        <img src="img/cart1.png" width="30" height="30" onmouseover="carthover(this);" onmouseout="cartunhover(this);">
-      </a>
+  </div> <!-- end of nav and jumbotron -->
+  <div class="row">
+    <div class="col-6 col-sm-3 col-md-3 col-lg-2">
+      <h5 class="order-cart" onclick="showcart()">Cart <img src="img/cart1.png" id="showcartimg" class="showcart" alt=""></h5>
+      <table id="ordertable">
+        <tr>
+          <th class="cell1">Item</th>
+          <th class="cell2">Amount</th>
+          <th class="cell3">Price</th>
+        </tr>
+      </table>
+      <input type="submit" id="clearcart" class="clearcart" value="Clear" onclick="clearcart()">
     </div>
-  </nav>
-  <!-- end of NavBar -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Order</h1>
+    <div class="col-12 col-sm-9 col-md-9 col-lg-8">
+      <form class="orderform" action="#" method="post" enctype="text/plain">
+        <h5 class="orderheader">Payment Information</h5><br><br>
+        <div class="row">
+          <div class="col-0 col-sm-2 col-md-2 col-lg-2">
+          </div>
+          <div class="col-12 col-sm-10 col-md-10 col-lg-8">
+            <div class="paymentinfogroup">
+              <select class="orderinput paymentinfo" name="" id="paymentmethod">
+                <option value="empty">----</option>
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="AmericanExpress">American Express</option>
+                <option value="Discover">Discover</option>
+                <option value="JCB">JCB</option>
+              </select> <br><br>
+              <input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber" required>
+              <select class="orderinput paymentinfo" name="" id="expirationmonth">
+                <option value="empty">--</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              <select class="orderinput paymentinfo" name="" id="expirationyear">
+                <option value="empty">----</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+                <option>2031</option>
+                <option>2032</option>
+                <option>2033</option>
+                <option>2034</option>
+                <option>2035</option>
+                <option>2036</option>
+                <option>2037</option>
+                <option>2038</option>
+                <option>2039</option>
+                <option>2040</option>
+                <option>2041</option>
+                <option>2042</option>
+                <option>2043</option>
+                <option>2044</option>
+              </select>
+              <input type="text" class="orderinput paymentinfo" placeholder="cvv" id="cvv" maxlength="3" required>
+            </div>
+          </div>
+          <div class="col-0 col-sm-0 col-md-0 col-lg-2">
+          </div>
+        </div>
+        <br><br>
+        <h5 class="orderheader">Other Information</h5><br><br>
+        <div class="row">
+          <div class="col-0 col-sm-1 col-md-1 col-lg-2">
+
+          </div>
+          <div class="col-6 col-sm-5 col-md-5 col-lg-4">
+            <input class="orderinput formgroupleft" id="lastname" type="text" placeholder="Last Name" value="" required>
+            <input class="orderinput formgroupleft" id="firstname" type="text" placeholder="First Name" value="" required>
+            <br><br>
+            <input class="orderinput formgroupleft" id="billing" type="text" placeholder="Billing Address" value="" required><br><br>
+            <input class="orderinput formgroupleft" id="billing2" type="text" placeholder="Billing Address, 2" value="">
+          </div>
+          <div class="col-6 col-sm-5 col-md-5 col-lg-4">
+            <input class="orderinput formgroupright" id="city" type="text" placeholder="City" value="" required><br><br>
+            <select class="orderinput formgroupright" id="state" required>
+              <option>State</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select> <br><br>
+            <input class="orderinput formgroupright" id="zipcode" type="text" placeholder="Zip/Postal Code" value="" required>
+          </div>
+          <div class="col-0 col-sm-1 col-md-1 col-lg-2">
+
+          </div>
+        </div> <br><br>
+        <input type="submit" class="submit" value="Order">
+      </form>
+    </div>
+
+    <div class="col-0 col-sm-0 col-md-0 col-lg-2">
     </div>
   </div>
-</div> <!-- end of nav and jumbotron -->
-<div class="row">
-<div class="col-2">
-  <h5 class="order-cart">Cart</h5>
-  <table id="ordertable">
-  <tr>
-    <th class="cell1">Item</th>
-    <th class="cell2">Amount</th>
-    <th class="cell3">Price</th>
-  </tr>
-  </table>
-  <input type="submit" id="clearcart" class="clearcart" value="Clear" onclick="clearcart()">
-</div>
-<div class="col-8">
-    <form class="orderform" action="#" method="post" enctype="text/plain">
-      <h5 class= "orderheader">Payment Information</h5> <br><br>
-<select class="orderinput paymentinfo" name="" id ="paymentmethod">
-  <option value="empty">----</option>
-  <option value="Visa">Visa</option>
-  <option value="MasterCard">MasterCard</option>
-  <option value="AmericanExpress">American Express</option>
-  <option value="Discover">Discover</option>
-  <option value="JCB">JCB</option>
-</select> <br><br>
-<input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber" required>
-<select class="orderinput paymentinfo" name="" id ="expirationmonth">
-  <option value="empty">--</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-  <option>10</option>
-  <option>11</option>
-  <option>12</option>
-</select>
-<select class="orderinput paymentinfo" name="" id ="expirationyear">
-  <option value="empty">----</option>
-  <option>2019</option>
-  <option>2020</option>
-  <option>2021</option>
-  <option>2022</option>
-  <option>2023</option>
-  <option>2024</option>
-  <option>2025</option>
-  <option>2026</option>
-  <option>2027</option>
-  <option>2028</option>
-  <option>2029</option>
-  <option>2030</option>
-  <option>2031</option>
-  <option>2032</option>
-  <option>2033</option>
-  <option>2034</option>
-  <option>2035</option>
-  <option>2036</option>
-  <option>2037</option>
-  <option>2038</option>
-  <option>2039</option>
-  <option>2040</option>
-  <option>2041</option>
-  <option>2042</option>
-  <option>2043</option>
-  <option>2044</option>
-</select>
-<input type="text" class="orderinput paymentinfo" placeholder="cvv" id="cvv" maxlength="3" required>
- <br><br>
-  <h5 class= "orderheader">Other Information</h5><br><br>
-      <input class="orderinput formgroupleft" id="firstname"type="text" placeholder="First Name" value="" required>
-      <input class="orderinput formgroupleft" id="lastname" type="text" placeholder="Last Name" value="" required>
-      <input class="orderinput formgroupright" id="city"type="text" placeholder="City" value="" required><br><br>
-      <input class="orderinput formgroupleft" id="billing" type="text" placeholder="Billing Address" value="" required>
-      <select class="orderinput formgroupright" id="state" required>
-  <option>State</option>
-  <option value="AL">Alabama</option>
-	<option value="AK">Alaska</option>
-	<option value="AZ">Arizona</option>
-	<option value="AR">Arkansas</option>
-	<option value="CA">California</option>
-	<option value="CO">Colorado</option>
-	<option value="CT">Connecticut</option>
-	<option value="DE">Delaware</option>
-	<option value="DC">District Of Columbia</option>
-	<option value="FL">Florida</option>
-	<option value="GA">Georgia</option>
-	<option value="HI">Hawaii</option>
-	<option value="ID">Idaho</option>
-	<option value="IL">Illinois</option>
-	<option value="IN">Indiana</option>
-	<option value="IA">Iowa</option>
-	<option value="KS">Kansas</option>
-	<option value="KY">Kentucky</option>
-	<option value="LA">Louisiana</option>
-	<option value="ME">Maine</option>
-	<option value="MD">Maryland</option>
-	<option value="MA">Massachusetts</option>
-	<option value="MI">Michigan</option>
-	<option value="MN">Minnesota</option>
-	<option value="MS">Mississippi</option>
-	<option value="MO">Missouri</option>
-	<option value="MT">Montana</option>
-	<option value="NE">Nebraska</option>
-	<option value="NV">Nevada</option>
-	<option value="NH">New Hampshire</option>
-	<option value="NJ">New Jersey</option>
-	<option value="NM">New Mexico</option>
-	<option value="NY">New York</option>
-	<option value="NC">North Carolina</option>
-	<option value="ND">North Dakota</option>
-	<option value="OH">Ohio</option>
-	<option value="OK">Oklahoma</option>
-	<option value="OR">Oregon</option>
-	<option value="PA">Pennsylvania</option>
-	<option value="RI">Rhode Island</option>
-	<option value="SC">South Carolina</option>
-	<option value="SD">South Dakota</option>
-	<option value="TN">Tennessee</option>
-	<option value="TX">Texas</option>
-	<option value="UT">Utah</option>
-	<option value="VT">Vermont</option>
-	<option value="VA">Virginia</option>
-	<option value="WA">Washington</option>
-	<option value="WV">West Virginia</option>
-	<option value="WI">Wisconsin</option>
-	<option value="WY">Wyoming</option>
-</select>   <br><br>
-      <input class="orderinput formgroupleft" id="billing2" type="text" placeholder="Billing Address, line 2" value="" >
-      <input class="orderinput formgroupright" id="zipcode"type="text" placeholder="Zip/Postal Code" value="" required> <br><br>
-      <input type="submit" class="submit" value="Order">
-
-    </form>
-</div>
-<div class="col-2">
-</div>
-</div>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <!-- Footer -->
   <footer class="page-footer font-small">

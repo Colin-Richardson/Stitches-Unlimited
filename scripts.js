@@ -184,8 +184,20 @@ function reload4(){
   document.location.href = 'tempproduct.html#suprisedduck';
   location.reload();
 }
-//if (location.hash === '#  '){
-// document.getElementById("productimg").setAttribute('src', 'img/  ');
-// document.getElementById("item").innerHTML = "   ";
-// document.getElementById("description").innerHTML = "  ";
-//}
+function showcart(){
+var img =  document.getElementById('showcartimg');
+if (document.body.classList.contains('activeshowcart')){
+img.setAttribute('src', 'img/cart1.png');
+document.body.classList.remove('activeshowcart');
+img.className = "showcart";
+document.getElementById('ordertable').style.display = "none";
+document.getElementById('clearcart').style.display = "none";
+}else {
+img.setAttribute('src', 'img/cart2.png');
+document.body.classList.add('activeshowcart');
+img.className += " rotate";
+document.getElementById('ordertable').style.display = "block";
+document.getElementById('clearcart').style.display = "block";
+}
+
+}
