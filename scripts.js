@@ -209,19 +209,19 @@ if (location.hash === '#plainblacktee'){
 }
 }
 function reload1(){
-  document.location.href = 'tempproduct.html#petbowl';
+  document.location.href = 'product.html#petbowl';
   location.reload();
 }
 function reload2(){
-  document.location.href = 'tempproduct.html#replicabuic';
+  document.location.href = 'product.html#replicabuic';
   location.reload();
 }
 function reload3(){
-  document.location.href = 'tempproduct.html#slapbracelet';
+  document.location.href = 'product.html#slapbracelet';
   location.reload();
 }
 function reload4(){
-  document.location.href = 'tempproduct.html#suprisedduck';
+  document.location.href = 'product.html#suprisedduck';
   location.reload();
 }
 function showcart(){
@@ -239,5 +239,7 @@ img.className += " rotate";
 document.getElementById('ordertable').style.display = "block";
 document.getElementById('clearcart').style.display = "block";
 }
+}
+function submitorder(){
 
 }

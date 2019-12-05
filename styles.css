@@ -710,6 +710,14 @@ width: 60%;
 -moz-transform: rotate(90deg);
 -ms-transform: rotate(90deg);
 }
+.overlay{
+    position:fixed;
+    z-index:999;
+    width:100%;
+    height:100%;
+    background-color: black;
+    background-color:rgba(0,0,0,.75)
+}
 @media screen and (max-width:1024px) {
 .carousel-cell{
 width: 35%;
