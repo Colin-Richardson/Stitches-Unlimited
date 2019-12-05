@@ -21,7 +21,7 @@ Our website consists of many things, but the most notable of which include:
 
 - Unique and creative catalogue structure.
 
-- A clean and easy on the eyes color palette and font.
+- A clean and easy-on-the-eyes color palette and font.
 
 - In depth details about all the products.
 
@@ -29,13 +29,13 @@ Our website consists of many things, but the most notable of which include:
 
 - Manually edited images including:
 
-  - Catalogue items having a transparent background.
+  - Catalogue items with a transparent background.
 
   - A light red and dark red cart when you hover over it.
 
   - Updated logo for better display colors.
 
-  - "Item of the Day" has a red background in order to work with the red border around it.
+  - Red background for the "Item of the Day" in order to work with the red border around it.
 
   - Trending items made wider to fit in the carousel.
 
@@ -45,4 +45,4 @@ Our website consists of many things, but the most notable of which include:
 
 - Awards and accolades Stitches Unlimited have received to build credibility in the company (ethos).
 
-Thank you for considering our website. This was an enormous ensemble of commitment and work, but ultimately was an incredible experience full of ups, downs, but - most importantly - perseverance.
+Thank you for considering our website. This project involved an enormous ensemble of commitment and work, but ultimately, it was an incredible experience full of ups, downs, and - most importantly - perseverance.
