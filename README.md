@@ -3,7 +3,6 @@ Our company website
 
 1. Script link to scripts.js should probably go after other scripts.
 2. Need meta for description, keywords, and author on each page
-3. A lot of media queries. Did you mean to do that?
 
 Overall, amazing job you guys are doing. Keep up the great work.
 
