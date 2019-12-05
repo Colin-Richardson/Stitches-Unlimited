@@ -1,12 +1,4 @@
 # Stitches-Unlimited
-Our company website
-
-1. Script link to scripts.js should probably go after other scripts.
-2. Need meta for description, keywords, and author on each page
-
-Overall, amazing job you guys are doing. Keep up the great work.
-
-Stitches Unlimited
 
 Stitches Unlimited is a company from Humboldt that embroiders logos onto products in order to promote one's business. The main idea behind this website is to offer a clear, user friendly UI that can be accessible to all ages. We understand that websites play an enormous role in promoting small, local businesses, so we made sure to construct the most concise website we can.
 
