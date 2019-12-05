@@ -240,3 +240,6 @@ document.getElementById('ordertable').style.display = "block";
 document.getElementById('clearcart').style.display = "block";
 }
 }
+function tocatalogue(){
+location.href = "catalogue.html";
+}
