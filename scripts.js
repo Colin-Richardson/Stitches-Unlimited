@@ -173,7 +173,7 @@ function product() {
     document.getElementById("item").innerHTML = "Patches";
     document.getElementById("description").innerHTML = "Show your appreciation for a job well-done with these woven patches. Featuring a slightly different look than embroidered patches, these have a complex two dimensional look and 100% tight woven thread that perfectly display fine details, gradients, landscapes and very small lettering. Requiring 10-12 days after proof approval for creation, these customizable patches come with free ground shipping in the continental US.";
   }
-  if (location.hash === '#Mugwarmer') {
+  if (location.hash === '#mugwarmer') {
     document.getElementById("productimg").setAttribute('src', 'img/mugwarmer.jpg');
     document.getElementById("item").innerHTML = "Mug Warmer";
     document.getElementById("description").innerHTML = "This mug warmer works by USB, does not require a battery, it can keep the temperature of coffee/tea/drink at around 40 degree. It is easy to install, small size, light weight and easy to carry, suitable for home and office.";
@@ -207,6 +207,11 @@ function product() {
     document.getElementById("productimg").setAttribute('src', 'img/carousel3.jpg');
     document.getElementById("item").innerHTML = "Plain Black Tee";
     document.getElementById("description").innerHTML = "The cooling and breathable technology of Webtech in the Parima Long Sleeve Tech Tee will let you beat the heat during all your outdoor activities. Its added Caretech properties allow for ease of care, and it is engineered with a snag resist fabric, wicking finish and UV protection. You're set for any outdoor activity wearing the Parima in any of its six must-have colors.";
+  }
+  if (location.hash === '#') {
+    document.getElementById("productimg").setAttribute('src', 'img/.jpg');
+    document.getElementById("item").innerHTML = "  ";
+    document.getElementById("description").innerHTML = " ";
   }
 }
 
