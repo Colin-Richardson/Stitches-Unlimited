@@ -1106,15 +1106,20 @@ footer {
     .about {
       font-size: 175%;
     }
-  }
   .clearcart {
     padding: 15px 81px;
   }
+  .addtocart {
+    margin-right: 35%;
+  }
+.product-paragraph{
+  margin-left: 2%;
+}
+}
   @media screen and (max-width:375px) {
     .jumbotron {
       padding-left: 18%;
     }
-
     .card-title-index {
       font-size: 8px;
     }
@@ -1150,10 +1155,13 @@ footer {
     .about {
       font-size: 150%;
     }
-  }
   .clearcart {
     padding: 15px 68px;
-  }
+ }
+ .addtocart {
+   margin-right: 32%;
+ }
+}
   @media screen and (max-width:320px) {
     .jumbotron {
       padding-left: 13%;
@@ -1193,5 +1201,8 @@ footer {
 
     .about {
       font-size: 125%;
+    }
+    .addtocart {
+      margin-right: 25%;
     }
   }

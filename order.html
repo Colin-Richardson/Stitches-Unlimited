@@ -83,7 +83,7 @@
                 <option value="Discover">Discover</option>
                 <option value="JCB">JCB</option>
               </select> <br><br>
-              <input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber" required>
+              <input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber" minLength="16" maxlength="19"  required>
               <select class="orderinput paymentinfo" name="" id="expirationmonth">
                 <option value="empty">--</option>
                 <option>1</option>
@@ -128,7 +128,7 @@
                 <option>2043</option>
                 <option>2044</option>
               </select>
-              <input type="text" class="orderinput paymentinfo" placeholder="cvv" id="cvv" maxlength="3" required>
+              <input type="text" class="orderinput paymentinfo" placeholder="cvv" id="cvv" minLength="3" maxlength="3" required>
             </div>
           </div>
           <div class="col-0 col-sm-0 col-md-0 col-lg-2">
@@ -203,7 +203,7 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select> <br><br>
-            <input class="orderinput formgroupright" id="zipcode" type="text" placeholder="Zip/Postal Code" value="" required>
+            <input class="orderinput formgroupright" id="zipcode" type="text" placeholder="Zip/Postal Code" value="" minLength="5" maxlength="5" required>
           </div>
           <div class="col-0 col-sm-1 col-md-1 col-lg-2">
 
