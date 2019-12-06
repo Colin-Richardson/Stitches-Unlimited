@@ -243,3 +243,10 @@ document.getElementById('clearcart').style.display = "block";
 function tocatalogue(){
 location.href = "catalogue.html";
 }
+function toorder(){
+location.href = "order.html";
+}
+function tocatalogueclear(){
+location.href = "catalogue.html";
+sessionStorage.clear();
+}
