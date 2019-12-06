@@ -208,10 +208,10 @@ function product() {
     document.getElementById("item").innerHTML = "Plain Black Tee";
     document.getElementById("description").innerHTML = "The cooling and breathable technology of Webtech in the Parima Long Sleeve Tech Tee will let you beat the heat during all your outdoor activities. Its added Caretech properties allow for ease of care, and it is engineered with a snag resist fabric, wicking finish and UV protection. You're set for any outdoor activity wearing the Parima in any of its six must-have colors.";
   }
-  if (location.hash === '#') {
-    document.getElementById("productimg").setAttribute('src', 'img/.jpg');
-    document.getElementById("item").innerHTML = "  ";
-    document.getElementById("description").innerHTML = " ";
+  if (location.hash === '#mixer') {
+    document.getElementById("productimg").setAttribute('src', 'img/mixer.png');
+    document.getElementById("item").innerHTML = "Mixer";
+    document.getElementById("description").innerHTML = "Make up to 9 dozen cookies in a single batch with the KitchenAid Artisan Series 5 Quart Tilt-Head Stand Mixer. This mixer also features 10 speeds to thoroughly mix, knead and whip ingredients quickly and easily and is available in a variety of colors to perfectly match your kitchen design or personality. Includes: (1) Coated Flat Beater, (1) Coated Dough Hook, (1) 6-Wire Whip, (1) Pouring Shield";
   }
 }
 
