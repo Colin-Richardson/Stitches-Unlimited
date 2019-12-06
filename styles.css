@@ -710,7 +710,14 @@ width: 60%;
 -moz-transform: rotate(90deg);
 -ms-transform: rotate(90deg);
 }
-
+.btn-primary{
+  background-color: #a11212;
+  border-color: #a11212;
+}
+.btn-primary:hover{
+  background-color: #6e0c0c;
+    border-color: #6e0c0c;
+}
 @media screen and (max-width:1024px) {
 .carousel-cell{
 width: 35%;
