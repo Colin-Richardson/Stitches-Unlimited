@@ -803,15 +803,9 @@ footer {
   background-color: #6e0c0c;
   border-color: #6e0c0c;
 }
-
 @media screen and (max-width:2001px) {
   footer {
     margin-top: 5%;
-  }
-}
-@media screen and (max-width:1990px) {
-  footer {
-    margin-top: 0%;
   }
 }
 @media screen and (max-width:1024px) {
@@ -822,7 +816,6 @@ footer {
   .card-title-index {
     font-size: 12px;
   }
-
   .dayitem {
     width: 225px;
     height: 275px;
@@ -890,7 +883,9 @@ footer {
     padding: 1% 23%;
     margin-right: 9%;
   }
-
+  .clearcart {
+    padding: 15px 68px;
+  }
   @media screen and (max-width:989px) {
     .nav-order {
       display: block;
@@ -1112,7 +1107,9 @@ footer {
       font-size: 175%;
     }
   }
-
+  .clearcart {
+    padding: 15px 81px;
+  }
   @media screen and (max-width:375px) {
     .jumbotron {
       padding-left: 18%;
@@ -1154,7 +1151,9 @@ footer {
       font-size: 150%;
     }
   }
-
+  .clearcart {
+    padding: 15px 68px;
+  }
   @media screen and (max-width:320px) {
     .jumbotron {
       padding-left: 13%;

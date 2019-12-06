@@ -93,6 +93,9 @@ function clearcart() {
 }
 
 function product() {
+
+document.getElementById("productfooter").style.marginTop = "0%";
+
   if (location.hash === '#goldenshovel') {
     document.getElementById("productimg").setAttribute('src', 'img/goldshovel.png');
     document.getElementById("item").innerHTML = "Goldenshovel";
