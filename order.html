@@ -6,9 +6,9 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name = "keywords" content = "Order, Cart, Checkout, Stitches Unlimited, Stitches, Embroidery," />
-  <meta name = "description" content = "A form to order items and a cart that shows what you are ordering." />
-  <meta name = "author" content = "Colin Richardson, Matthew Thornton, and Tanner Snell" />
+  <meta name="keywords" content="Order, Cart, Checkout, Stitches Unlimited, Stitches, Embroidery," />
+  <meta name="description" content="A form to order items and a cart that shows what you are ordering." />
+  <meta name="author" content="Colin Richardson, Matthew Thornton, and Tanner Snell" />
   <!-- Flickity CSS-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- Bootstrap CSS -->
@@ -56,7 +56,7 @@
   </div> <!-- end of nav and jumbotron -->
   <div class="row">
     <div class="col-6 col-sm-3 col-md-3 col-lg-2">
-        <h5 class="order-cart order-cart-desktop">Cart</h5>
+      <h5 class="order-cart order-cart-desktop">Cart</h5>
       <h5 class="order-cart order-cart-mobile" onclick="showcart()">Cart <img src="img/cart1.png" id="showcartimg" class="showcart" alt=""></h5>
       <table id="ordertable">
         <tr>
@@ -210,24 +210,24 @@
           </div>
         </div> <br><br>
         <input type="submit" class="submitorder" value="Order" id="submitorder" data-toggle="modal" data-target="#ordermodal">
-        </form>
-        <div class="modal fade" id="ordermodal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true" data-backdrop="static">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="orderModalLabel">Thanks for shopping with Stitches Unlimited</h5>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="clearcart()">Close</button>
-        <button type="button"  class="btn btn-primary" onclick="tocatalogueclear();">Continue Shopping</button>
+      </form>
+      <div class="modal fade" id="ordermodal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="orderModalLabel">Thanks for shopping with Stitches Unlimited</h5>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="clearcart()">Close</button>
+              <button type="button" class="btn btn-primary" onclick="tocatalogueclear();">Continue Shopping</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-        </div>
-</div>
-    <div class="col-0 col-sm-0 col-md-0 col-lg-2">
-    </div>
+  <div class="col-0 col-sm-0 col-md-0 col-lg-2">
+  </div>
   </div>
   <br><br><br>
   <!-- Footer -->
