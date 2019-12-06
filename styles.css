@@ -718,6 +718,11 @@ width: 60%;
   background-color: #6e0c0c;
     border-color: #6e0c0c;
 }
+@media screen and (max-width:2000px){
+  footer{
+    margin-top: 5%;
+  }
+}
 @media screen and (max-width:1024px) {
 .carousel-cell{
 width: 35%;
