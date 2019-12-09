@@ -83,7 +83,7 @@
                 <option value="Discover">Discover</option>
                 <option value="JCB">JCB</option>
               </select> <br><br>
-              <input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber" minLength="16" maxlength="19"  required>
+              <input type="text" class="orderinput paymentinfo" placeholder="Card Number" id="cardnumber" minLength="16" maxlength="19" onkeydown="adddash(this)" required>
               <select class="orderinput paymentinfo" name="" id="expirationmonth">
                 <option value="empty">--</option>
                 <option>1</option>

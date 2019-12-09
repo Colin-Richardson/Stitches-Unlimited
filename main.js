@@ -1,4 +1,4 @@
-//changes cart image when hovering
+//changes cart image when hovering/unhovering
 function carthover(element) {
   element.setAttribute('src', 'img/cart2.png');
 }
@@ -28,7 +28,6 @@ function price() {
     document.getElementById('price').innerHTML = document.getElementById('price6').innerHTML * 200;
   }
 }
-
 //stores item data
 function addtocart() {
   //counts number of clicks
@@ -86,20 +85,20 @@ function ordertable() {
     //sessionStorage.clear();
   }
 }
-
+//clears cart
 function clearcart() {
   sessionStorage.clear();
   location.reload();
 }
-
+//runs onload and hashchange of product.html
 function product() {
-
+//sets footer margintop to 0
 document.getElementById("productfooter").style.marginTop = "0%";
-
+//each if statement checks what the hash is and changes the image, title and description if true
   if (location.hash === '#goldenshovel') {
     document.getElementById("productimg").setAttribute('src', 'img/goldshovel.png');
     document.getElementById("item").innerHTML = "Goldenshovel";
-    document.getElementById("description").innerHTML = "'Gold plated 6 1/2' recognition shovel on a piano wood plaque and a 6' x 1' blank plate.";
+    document.getElementById("description").innerHTML = "Gold plated 6 1/2' recognition shovel on a piano wood plaque and a 6' x 1' blank plate.";
   }
   if (location.hash === '#fidgetspinner') {
     document.getElementById("productimg").setAttribute('src', 'img/cuttingboard.png');
@@ -118,7 +117,7 @@ document.getElementById("productfooter").style.marginTop = "0%";
   }
   if (location.hash === '#slapbracelet') {
     document.getElementById("productimg").setAttribute('src', 'img/slapbracelet.png');
-    document.getElementById("item").innerHTML = "Slap Bracelt Ruler";
+    document.getElementById("item").innerHTML = "Slap Bracelet Ruler";
     document.getElementById("description").innerHTML = "Slap band ruler bracelet made of eco-friendly silicone. Can be used as both a ruler and worn as a bracelet. Different sizes and colors available. Ideal for schools, office, company and etc.";
   }
   if (location.hash === '#suprisedduck') {
@@ -217,53 +216,55 @@ document.getElementById("productfooter").style.marginTop = "0%";
     document.getElementById("description").innerHTML = "Make up to 9 dozen cookies in a single batch with the KitchenAid Artisan Series 5 Quart Tilt-Head Stand Mixer. This mixer also features 10 speeds to thoroughly mix, knead and whip ingredients quickly and easily and is available in a variety of colors to perfectly match your kitchen design or personality. Includes: (1) Coated Flat Beater, (1) Coated Dough Hook, (1) 6-Wire Whip, (1) Pouring Shield";
   }
 }
-
-function reload1() {
-  document.location.href = 'product.html#petbowl';
-  location.reload();
-}
-
-function reload2() {
-  document.location.href = 'product.html#replicabuic';
-  location.reload();
-}
-
-function reload3() {
-  document.location.href = 'product.html#slapbracelet';
-  location.reload();
-}
-
-function reload4() {
-  document.location.href = 'product.html#suprisedduck';
-  location.reload();
-}
-
+//shows/hides cart
 function showcart() {
+//records the show cart as img
   var img = document.getElementById('showcartimg');
+//checks if 'activeshowcart' is in the classlist
   if (document.body.classList.contains('activeshowcart')) {
+    //sets image to default image
     img.setAttribute('src', 'img/cart1.png');
+    //removes activeshowcart from classlist
     document.body.classList.remove('activeshowcart');
+    //sets class to showcart and remove other classes
     img.className = "showcart";
+    // hides table and clear button
     document.getElementById('ordertable').style.display = "none";
     document.getElementById('clearcart').style.display = "none";
   } else {
+    //sets image to selected version
     img.setAttribute('src', 'img/cart2.png');
+    //adds activeshowcart to classlist
     document.body.classList.add('activeshowcart');
+    // adds rotate class to cart to rotate 90 degrees right
     img.className += " rotate";
+    //reveals table and clear button
     document.getElementById('ordertable').style.display = "block";
     document.getElementById('clearcart').style.display = "block";
   }
 }
-
+// changes page to catalogue
 function tocatalogue() {
   location.href = "catalogue.html";
 }
-
+//changes page to order
 function toorder() {
   location.href = "order.html";
 }
-
+//changes page to catalogue and clears cart
 function tocatalogueclear() {
   location.href = "catalogue.html";
   sessionStorage.clear();
+}
+function adddash(r){
+console.log(r.value);
+if(r.value.length == 4){
+  r.value += "-";
+}
+if(r.value.length == 9){
+  r.value += "-";
+}
+if(r.value.length == 14){
+  r.value += "-";
+}
 }
