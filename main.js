@@ -257,14 +257,17 @@ function tocatalogueclear() {
   sessionStorage.clear();
 }
 function adddash(r){
-console.log(r.value);
-if(r.value.length == 4){
+var key = event.keyCode || event.CharCode;
+if (key == 8 || key == 46){
+
+}
+else if(r.value.length == 4){
   r.value += "-";
 }
-if(r.value.length == 9){
+else if(r.value.length == 9){
   r.value += "-";
 }
-if(r.value.length == 14){
+else if(r.value.length == 14){
   r.value += "-";
 }
 }

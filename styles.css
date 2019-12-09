@@ -738,7 +738,7 @@ footer {
 }
 
 #paymentmethod, #cardnumber {
-  width: 50%;
+  width: 25%;
 }
 #cvv {
   width: 7%;
