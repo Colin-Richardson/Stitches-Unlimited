@@ -319,7 +319,7 @@ document.getElementById("productfooter").style.marginTop = "0%";
   }
   if (location.hash === '#Chair') {
     document.getElementById("productimg").setAttribute('src', 'img/chair.png');
-    document.getElementById("item").innerHTML = "Collapsible Bucket";
+    document.getElementById("item").innerHTML = "Chair";
     document.getElementById("description").innerHTML = "With an extra sturdy steel frame and durable 600D fabric this chair has a loading weight limit of 400lbs. Features a unique and comfortable rounded ‘moon’ design with padded construction and a front tech pocket. Includes a study 600D carrying bag.";
     sessionStorage.setItem("price1" , "1");
     sessionStorage.setItem("price2" , "1");
