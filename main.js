@@ -10,22 +10,22 @@ function cartunhover(element) {
 function price() {
   let quantity = document.getElementById('amount').value;
   if (quantity === "1") {
-    document.getElementById('price').innerHTML = document.getElementById('price1').innerHTML;
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price1");
   }
   if (quantity === "10") {
-    document.getElementById('price').innerHTML = document.getElementById('price2').innerHTML * 10;
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price2") * 10;
   }
   if (quantity === "25") {
-    document.getElementById('price').innerHTML = document.getElementById('price3').innerHTML * 25;
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price3") * 25;
   }
   if (quantity === "50") {
-    document.getElementById('price').innerHTML = document.getElementById('price4').innerHTML * 50;
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price4") * 50;
   }
   if (quantity === "100") {
-    document.getElementById('price').innerHTML = document.getElementById('price5').innerHTML * 100;
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price5") * 100;
   }
   if (quantity === "200") {
-    document.getElementById('price').innerHTML = document.getElementById('price6').innerHTML * 200;
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price6") * 200;
   }
 }
 //stores item data
@@ -51,6 +51,7 @@ function addtocart() {
 }
 //creates table based on stored item data
 function ordertable() {
+//hides clear button if table is empty
   var clear = document.getElementById('clearcart');
   if (sessionStorage.getItem('item1') == null) {
     clear.style.visibility = "hidden";
@@ -99,6 +100,18 @@ document.getElementById("productfooter").style.marginTop = "0%";
     document.getElementById("productimg").setAttribute('src', 'img/goldshovel.png');
     document.getElementById("item").innerHTML = "Goldenshovel";
     document.getElementById("description").innerHTML = "Gold plated 6 1/2' recognition shovel on a piano wood plaque and a 6' x 1' blank plate.";
+    sessionStorage.setItem("price1" , "1");
+    sessionStorage.setItem("price2" , "1");
+    sessionStorage.setItem("price3" , "1");
+    sessionStorage.setItem("price4" , "1");
+    sessionStorage.setItem("price5" , "1");
+    sessionStorage.setItem("price6" , "1");
+    document.getElementById('price1').innerHTML += sessionStorage.getItem("price1");
+    document.getElementById('price2').innerHTML += sessionStorage.getItem("price2");
+    document.getElementById('price3').innerHTML += sessionStorage.getItem("price3");
+    document.getElementById('price4').innerHTML += sessionStorage.getItem("price4");
+    document.getElementById('price5').innerHTML += sessionStorage.getItem("price5");
+    document.getElementById('price6').innerHTML += sessionStorage.getItem("price6");
   }
   if (location.hash === '#fidgetspinner') {
     document.getElementById("productimg").setAttribute('src', 'img/cuttingboard.png');
@@ -214,6 +227,26 @@ document.getElementById("productfooter").style.marginTop = "0%";
     document.getElementById("productimg").setAttribute('src', 'img/mixer.png');
     document.getElementById("item").innerHTML = "Mixer";
     document.getElementById("description").innerHTML = "Make up to 9 dozen cookies in a single batch with the KitchenAid Artisan Series 5 Quart Tilt-Head Stand Mixer. This mixer also features 10 speeds to thoroughly mix, knead and whip ingredients quickly and easily and is available in a variety of colors to perfectly match your kitchen design or personality. Includes: (1) Coated Flat Beater, (1) Coated Dough Hook, (1) 6-Wire Whip, (1) Pouring Shield";
+  }
+  //sets price onload
+  let quantity = document.getElementById('amount').value;
+  if (quantity === "1") {
+    document.getElementById('price').innerHTML = sessionStorage.getItem("price1");
+  }
+  if (quantity === "10") {
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price2") * 10;
+  }
+  if (quantity === "25") {
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price3") * 25;
+  }
+  if (quantity === "50") {
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price4") * 50;
+  }
+  if (quantity === "100") {
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price5") * 100;
+  }
+  if (quantity === "200") {
+    document.getElementById('price').innerHTML = "$" + sessionStorage.getItem("price6") * 200;
   }
 }
 //shows/hides cart
