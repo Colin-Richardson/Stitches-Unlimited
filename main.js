@@ -868,3 +868,31 @@ else if(r.value.length == 14){
   r.value += "-";
 }
 }
+function dayitem(){
+var date = new Date()
+var day = date.getDay();
+if (day === 1){
+document.getElementById("dayitem").setAttribute('src', 'img/diamondfridge.png');
+document.getElementById("dayitemcap").innerHTML = "Diamond Fridge for holding assortments of items";
+}
+if (day === 2){
+document.getElementById("dayitem").setAttribute('src', 'img/headphones.png');
+document.getElementById("dayitemcap").innerHTML = "High Quality headphones";
+}
+if (day === 3){
+document.getElementById("dayitem").setAttribute('src', 'img/cuttingboard.png');
+document.getElementById("dayitemcap").innerHTML = "Fidget Spinners to keep entertained";
+}
+if (day === 4){
+document.getElementById("dayitem").setAttribute('src', 'img/laptopbag.png');
+document.getElementById("dayitemcap").innerHTML = "Fully customizable Quality laptop bag";
+}
+if (day === 5){
+document.getElementById("dayitem").setAttribute('src', 'img/replicabuic.png');
+document.getElementById("dayitemcap").innerHTML = "1/8th scale, Replica Buick";
+}
+if (day === 6){
+document.getElementById("dayitem").setAttribute('src', 'img/tacticalbag.png');
+document.getElementById("dayitemcap").innerHTML = "Efficient Tactical Bag";
+}
+}
