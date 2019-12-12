@@ -18,6 +18,8 @@ Our website consists of many things, but the most notable of which include:
 
 - An organized column arrangement allowing one to be able to comprehend information easily.
 
+- Fully functioning Item of the Day system, in which the product changes each day.
+
 - Manually edited images including:
 
   - Catalogue items with a transparent background.
