@@ -41,7 +41,7 @@ function addtocart() {
   //creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
-  var priceString = "price";
+  var priceString = "orderprice";
   var itemKey = sessionStorage.getItem('clickcount')
   //generates itemKey with a number for every button press
   sessionStorage[itemString + itemKey] = document.getElementById('item').innerHTML;
@@ -51,17 +51,10 @@ function addtocart() {
 }
 //creates table based on stored item data
 function ordertable() {
-//hides clear button if table is empty
-  var clear = document.getElementById('clearcart');
-  if (sessionStorage.getItem('item1') == null) {
-    clear.style.visibility = "hidden";
-  } else {
-    clear.style.visibility = "visible";
-  }
   //creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
-  var priceString = "price";
+  var priceString = "orderprice";
   var itemKey = sessionStorage.getItem('clickcount');
   // loop that loops for each recorded button press(clickcount)
   for (i = 0; i < itemKey; i++) {
@@ -88,7 +81,21 @@ function ordertable() {
 var table = document.getElementById("ordertable");
 var row = table.insertRow(-1);
 var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
+var cell2 = row.insertCell(1);
+cell1.setAttribute("class", "cell1");
+cell1.setAttribute("colspan", "2");
+cell2.setAttribute("class", "cell2");
+cell2.innerHTML = sessionStorage.getItem("totalprice");
+
+//hides clear button if table is empty
+  var clear = document.getElementById('clearcart');
+  if (sessionStorage.getItem('item1') == null) {
+    clear.style.visibility = "hidden";
+    row.style.visibility = "hidden";
+  } else {
+    clear.style.visibility = "visible";
+    row.style.visibility = "visible";
+  }
 }
 //clears cart
 function clearcart() {
