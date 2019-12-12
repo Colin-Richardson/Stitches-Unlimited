@@ -75,8 +75,13 @@ function ordertable() {
     cell1.innerHTML = sessionStorage.getItem(itemString + ii);
     cell2.innerHTML = sessionStorage.getItem(amountString + ii);
     cell3.innerHTML = sessionStorage.getItem(priceString + ii);
-    //remove comment below if sessionStoragebreaks
-    //sessionStorage.clear();
+    var cprice = cell3.innerHTML;
+    if(totalprice != null){
+    var totalprice = Number(cprice.replace("$","")) + Number(totalprice);
+    var totalprice = totalprice.toString();
+  } else{
+    var totalprice = cprice.replace("$","");
+  }
   }
 var table = document.getElementById("ordertable");
 var row = table.insertRow(-1);
@@ -85,7 +90,7 @@ var cell2 = row.insertCell(1);
 cell1.setAttribute("class", "cell1");
 cell1.setAttribute("colspan", "2");
 cell2.setAttribute("class", "cell2");
-cell2.innerHTML = sessionStorage.getItem("totalprice");
+cell2.innerHTML = "$" + totalprice;
 
 //hides clear button if table is empty
   var clear = document.getElementById('clearcart');
