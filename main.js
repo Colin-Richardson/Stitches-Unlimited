@@ -41,7 +41,7 @@ function addtocart() {
   //creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
-  var priceString = "price";
+  var priceString = "orderprice";
   var itemKey = sessionStorage.getItem('clickcount')
   //generates itemKey with a number for every button press
   sessionStorage[itemString + itemKey] = document.getElementById('item').innerHTML;
@@ -51,17 +51,10 @@ function addtocart() {
 }
 //creates table based on stored item data
 function ordertable() {
-//hides clear button if table is empty
-  var clear = document.getElementById('clearcart');
-  if (sessionStorage.getItem('item1') == null) {
-    clear.style.visibility = "hidden";
-  } else {
-    clear.style.visibility = "visible";
-  }
   //creates vars needed for function
   var itemString = "item";
   var amountString = "amount";
-  var priceString = "price";
+  var priceString = "orderprice";
   var itemKey = sessionStorage.getItem('clickcount');
   // loop that loops for each recorded button press(clickcount)
   for (i = 0; i < itemKey; i++) {
@@ -85,6 +78,24 @@ function ordertable() {
     //remove comment below if sessionStoragebreaks
     //sessionStorage.clear();
   }
+var table = document.getElementById("ordertable");
+var row = table.insertRow(-1);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+cell1.setAttribute("class", "cell1");
+cell1.setAttribute("colspan", "2");
+cell2.setAttribute("class", "cell2");
+cell2.innerHTML = sessionStorage.getItem("totalprice");
+
+//hides clear button if table is empty
+  var clear = document.getElementById('clearcart');
+  if (sessionStorage.getItem('item1') == null) {
+    clear.style.visibility = "hidden";
+    row.style.visibility = "hidden";
+  } else {
+    clear.style.visibility = "visible";
+    row.style.visibility = "visible";
+  }
 }
 //clears cart
 function clearcart() {
@@ -97,8 +108,11 @@ function product() {
 document.getElementById("productfooter").style.marginTop = "0%";
 //each if statement checks what the hash is and changes the image, title and description if true
   if (location.hash === '#goldenshovel') {
+    //sets main product image
     document.getElementById("productimg").setAttribute('src', 'img/goldshovel.png');
+    //sets product title
     document.getElementById("item").innerHTML = "Golden Shovel";
+    //sets product description
     document.getElementById("description").innerHTML = "Gold plated 6 1/2' recognition shovel on a piano wood plaque and a 6' x 1' blank plate.";
     sessionStorage.setItem("price1" , "20");
     sessionStorage.setItem("price2" , "15");
@@ -106,12 +120,14 @@ document.getElementById("productfooter").style.marginTop = "0%";
     sessionStorage.setItem("price4" , "5");
     sessionStorage.setItem("price5" , "2.5");
     sessionStorage.setItem("price6" , "1");
+    //displays prices and adds $ before
     document.getElementById('price1').innerHTML = "$" + sessionStorage.getItem("price1");
     document.getElementById('price2').innerHTML = "$" + sessionStorage.getItem("price2");
     document.getElementById('price3').innerHTML = "$" + sessionStorage.getItem("price3");
     document.getElementById('price4').innerHTML = "$" + sessionStorage.getItem("price4");
     document.getElementById('price5').innerHTML = "$" + sessionStorage.getItem("price5");
     document.getElementById('price6').innerHTML = "$" + sessionStorage.getItem("price6");
+    //sets similar items
     document.getElementById('productimg1').setAttribute('src', 'img/diamondfridge.png');
     document.getElementById('productlabel1').setAttribute('href', 'product.html#diamondfridge');
     document.getElementById('productlabel1').innerHTML = "Diamond Fridge";
@@ -868,29 +884,39 @@ else if(r.value.length == 14){
   r.value += "-";
 }
 }
+// sets item based on day
 function dayitem(){
+// gets date
 var date = new Date()
+//gets day from date
 var day = date.getDay();
+//displays item based on day
+//monday
 if (day === 1){
 document.getElementById("dayitem").setAttribute('src', 'img/diamondfridge.png');
 document.getElementById("dayitemcap").innerHTML = "Diamond Fridge for holding assortments of items";
 }
+//tuesday
 if (day === 2){
 document.getElementById("dayitem").setAttribute('src', 'img/headphones.png');
 document.getElementById("dayitemcap").innerHTML = "High Quality headphones";
 }
+//wednesday
 if (day === 3){
 document.getElementById("dayitem").setAttribute('src', 'img/cuttingboard.png');
 document.getElementById("dayitemcap").innerHTML = "Fidget Spinners to keep entertained";
 }
+//thursday
 if (day === 4){
 document.getElementById("dayitem").setAttribute('src', 'img/laptopbag.png');
 document.getElementById("dayitemcap").innerHTML = "Fully customizable Quality laptop bag";
 }
+//friday
 if (day === 5){
 document.getElementById("dayitem").setAttribute('src', 'img/replicabuic.png');
 document.getElementById("dayitemcap").innerHTML = "1/8th scale, Replica Buick";
 }
+//saturday
 if (day === 6){
 document.getElementById("dayitem").setAttribute('src', 'img/tacticalbag.png');
 document.getElementById("dayitemcap").innerHTML = "Efficient Tactical Bag";
