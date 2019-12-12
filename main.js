@@ -75,6 +75,7 @@ function ordertable() {
     cell1.innerHTML = sessionStorage.getItem(itemString + ii);
     cell2.innerHTML = sessionStorage.getItem(amountString + ii);
     cell3.innerHTML = sessionStorage.getItem(priceString + ii);
+    //adds all prices into total price
     var cprice = cell3.innerHTML;
     if(totalprice != null){
     var totalprice = Number(cprice.replace("$","")) + Number(totalprice);
@@ -83,6 +84,7 @@ function ordertable() {
     var totalprice = cprice.replace("$","");
   }
   }
+//creates total price row
 var table = document.getElementById("ordertable");
 var row = table.insertRow(-1);
 var cell1 = row.insertCell(0);
