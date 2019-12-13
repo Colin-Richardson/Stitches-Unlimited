@@ -933,6 +933,7 @@ function dayitem() {
     document.getElementById("dayanchor").setAttribute('href', 'product.html#tacticalbag');
   }
 }
+//opens modal on submit
 $('#orderform').on('submit', function(e){
   $('#ordermodal').modal('show');
   e.preventDefault();
