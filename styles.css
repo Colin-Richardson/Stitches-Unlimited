@@ -893,6 +893,7 @@ footer {
   .submitorder {
     padding: 1% 23%;
     margin-right: 9%;
+    pointer-events: none;
   }
 
   .clearcart {

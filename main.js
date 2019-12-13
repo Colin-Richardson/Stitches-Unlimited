@@ -933,22 +933,7 @@ function dayitem() {
     document.getElementById("dayanchor").setAttribute('href', 'product.html#tacticalbag');
   }
 }
-function formcheck() {
-  var lastname = document.getElementById("lastname").value.length;
-  var firstname = document.getElementById("firstname").value.length;
-  var billing = document.getElementById("billing").value.length;
-  var city = document.getElementById("city").value.length;
-  var zipcode = document.getElementById("zipcode").value.length;
-  var state = document.getElementById("state").value;
-  var cardnumber = document.getElementById("cardnumber").value.length;
-  var cvv = document.getElementById("cvv").value.length;
-  var expyear = document.getElementById("expirationyear").value;
-  var expmonth = document.getElementById("expirationmonth").value;
-if (lastname < 1 || firstname < 1 || billing < 1 || city < 1 || zipcode < 5 || state == "State" || cardnumber < 16 || cvv < 3 || expyear == "----" || expmonth == "--"){
-document.getElementById("submitorder").setAttribute("data-toggle", "");
-document.getElementById("submitorder").setAttribute("data-target", "");
-} else {
-  document.getElementById("submitorder").setAttribute("data-toggle", "modal");
-  document.getElementById("submitorder").setAttribute("data-target", "#ordermodal");
-}
-}
+$('#orderform').on('submit', function(e){
+  $('#ordermodal').modal('show');
+  e.preventDefault();
+});
